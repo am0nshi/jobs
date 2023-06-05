@@ -1,35 +1,42 @@
-import React, { memo } from 'react';
+import React, {InputHTMLAttributes, memo, useEffect, useRef} from 'react';
 import InputError from '../InputError';
 
-interface InputTextProps {
-	className: string,
+export interface InputTextProps extends InputHTMLAttributes<HTMLInputElement> {
 	name: string,
-	value: string,
-	title: string;
-	srcIcon: string;
-	error?: string;
-	autoComplete?: string;
-	placeholder?: string;
-	onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-	onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
+	srcIcon?: string;
+	errors?: {[key: string]: string};
+	isFocused?: boolean;
 }
+
 const InputText: React.FC<InputTextProps> = memo(({
 	className,
 	name,
 	value,
-	error,
+	errors,
 	title,
 	srcIcon,
 	autoComplete,
 	placeholder,
 	onChange,
-	onBlur }) => {
+	onBlur ,
+	isFocused
+}) => {
+	const localRef = useRef<HTMLInputElement>(null);
+
+	useEffect(() => {
+		if (isFocused) {
+			localRef.current?.focus();
+		}
+	}, []);
+
 	return (
 		<div className={className}>
 			<div className="form-inner mb-25">
 				<label htmlFor={name}>{title}</label>
 				<div className="input-area">
-					<img src={srcIcon} alt="" />
+
+					{srcIcon ? <img src={srcIcon} alt="" /> : null}
+
 					<input
 						onChange={onChange}
 						onBlur={onBlur}
@@ -38,9 +45,11 @@ const InputText: React.FC<InputTextProps> = memo(({
 						type="text"
 						id={name}
 						name={name}
-						placeholder={placeholder} />
+						placeholder={placeholder}
+						ref={localRef}
+					/>
 				</div>
-				{error ? <InputError message={error} /> : null}
+				{errors?.[name] ? <InputError message={errors[name]} /> : null}
 			</div>
 		</div>
 	)

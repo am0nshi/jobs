@@ -1,29 +1,30 @@
-import React, { memo, useState } from 'react'
+import React, {memo, useEffect, useRef, useState} from 'react'
 import InputError from '../InputError';
-interface InputTextProps {
-	className: string,
-	name: string;
-	title: string;
-	placeholder?: string;
-	value: string;
-	error?: string;
-	onBlur?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-	onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-	onClickIcon?: () => void;
-}
+import { InputTextProps } from "@/Components/InputText";
 const InputPassword: React.FC<InputTextProps> = memo(({
 	className,
 	name,
 	title,
 	placeholder,
 	value,
-	error,
-	onChange, }) => {
+	errors,
+	onBlur,
+	onChange,
+	isFocused,
+	srcIcon
+}) => {
+	const localRef = useRef<HTMLInputElement>(null);
 
 	const [passwordType, setPasswordType] = useState("password");
 	const [passwordIconClass, setPasswordIconClass] = useState("bi bi-eye-slash")
 
-	const handleTogle = () => {
+	useEffect(() => {
+		if (isFocused) {
+			localRef.current?.focus();
+		}
+	}, []);
+
+	const handleToggle = () => {
 		if (passwordType === "password") {
 			setPasswordType("text");
 			setPasswordIconClass("bi bi-eye-slash bi-eye")
@@ -36,18 +37,21 @@ const InputPassword: React.FC<InputTextProps> = memo(({
 		<div className={className}>
 			<div className="form-inner">
 				<label htmlFor={name}>{title}</label>
-
+				{srcIcon ? <img src={srcIcon} alt="" /> : null}
 				<input
 					onChange={onChange}
+					onBlur={onBlur}
 					value={value}
 					autoComplete="on"
 					id={name}
 					name={name}
 					type={passwordType}
-					placeholder={placeholder} />
-				<i onClick={handleTogle} className={passwordIconClass} id="togglePassword"></i>
+					placeholder={placeholder}
+					ref={localRef}
+				/>
+				<i onClick={handleToggle} className={passwordIconClass} id="togglePassword"></i>
 			</div>
-			{error ? <InputError message={error} /> : null}
+			{errors?.[name] ? <InputError message={errors[name]} /> : null}
 		</div>
 	)
 })
