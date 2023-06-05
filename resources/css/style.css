@@ -989,7 +989,7 @@ i.bx {
 }
 .user-card > ul li {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   padding: 10px 20px;
   border-top: 1px solid #eee;
   transition: 0.35s;
@@ -1056,7 +1056,7 @@ i.bx {
 }
 .notifacion-card > ul li {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   padding: 10px 0;
   border-top: 1px solid #eee;
 }
@@ -1317,7 +1317,7 @@ div#ui-datepicker-div {
 .top-bar2 .top-bar-right {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 40px;
   position: relative;
   z-index: 9;
@@ -1465,7 +1465,7 @@ div#ui-datepicker-div {
 .top-bar3 .top-bar-right {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 40px;
   position: relative;
   z-index: 9;
@@ -1704,7 +1704,7 @@ header.style-1 .menu-topbar-area .top-bar p a {
 header.style-1 .menu-topbar-area .top-bar .top-bar-right {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 40px;
   position: relative;
   z-index: 9;
@@ -2396,7 +2396,7 @@ header.style-2 .menu-topbar-area .top-bar p a {
 header.style-2 .menu-topbar-area .top-bar .top-bar-right {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 40px;
   position: relative;
   z-index: 9;
@@ -6462,7 +6462,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 }
 .home1-review-area .testimonial-card .testimonial-content .author-review-area {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 18px;
 }
@@ -9644,7 +9644,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   .table-wrapper .eg-table tbody tr td {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     width: 100%;
     text-align: right;
     padding-left: 30%;
@@ -10315,7 +10315,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   color: var(--title-color1);
   display: flex;
   align-items: baseline;
-  justify-content: end;
+  justify-content: flex-end;
   margin-bottom: 12px;
 }
 @media (max-width: 576px) {
@@ -12377,7 +12377,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 .job-details-sidebar .save-apply-btn ul {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -14908,7 +14908,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 }
 @media (max-width: 767px) {
   .pricing-plan-area .pricing-plan-card3 .job-qty-area .quantity {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 .pricing-plan-area .pricing-plan-card3 .job-qty-area .quantity .quantity-nav {
@@ -14992,7 +14992,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   font-size: 1rem;
   color: var(--primary-color1);
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   color: var(--title-color1);
 }
 .pricing-plan-area .pricing-plan-card3 table tbody tr:nth-child(2) {
@@ -15729,7 +15729,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   margin-left: 25px;
 }
 .home3-user-feedback .counter-area .counter-single.two {
-  justify-content: end;
+  justify-content: flex-end;
 }
 @media (max-width: 576px) {
   .home3-user-feedback .counter-area .counter-single.two {
@@ -15742,7 +15742,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   }
 }
 .home3-user-feedback .counter-area .counter-single.four {
-  justify-content: end;
+  justify-content: flex-end;
 }
 @media (max-width: 576px) {
   .home3-user-feedback .counter-area .counter-single.four {
@@ -15791,7 +15791,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 }
 .home3-user-feedback .user-feedback-wrap .user-feedback-top {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -17980,7 +17980,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   border-radius: 400px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   position: relative;
 }
 @media (max-width: 1399px) {
@@ -19967,7 +19967,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 .tranding-job-card .trending-job-content .job-info .job-type {
   display: flex;
   align-items: flex-start;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 50px;
   gap: 15px;
   max-width: 100%;
@@ -21840,7 +21840,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   .table-wrapper2 .eg-table tbody tr td {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     width: 100%;
     text-align: start;
     padding-left: 30%;
@@ -21978,7 +21978,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   .table-wrapper2 .eg-table.job-list-table tbody tr td {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     width: 100%;
     text-align: start;
     padding-left: 30%;

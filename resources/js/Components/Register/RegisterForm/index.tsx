@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useState, useEffect, FormEvent } from "react";
+import React, { memo, useEffect, FormEvent } from "react";
 
 // Components
 import InputText from "@/Components/InputText";
