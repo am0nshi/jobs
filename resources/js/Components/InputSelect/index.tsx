@@ -1,26 +1,43 @@
-import React, { memo } from 'react'
+import React, { useRef, useEffect, memo, InputHTMLAttributes } from 'react'
 import InputError from '../InputError';
 
-interface InputSelectProps {
-	className: string,
-	title: string;
-	name: string;
-	srcIcon: string;
+export interface InputSelectProps extends InputHTMLAttributes<HTMLSelectElement> {
 	options: Array<string>;
-	value: string;
-	error?: string;
-	onChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+	name: string,
+	srcIcon?: string;
+	errors?: { [key: string]: string | undefined };
+	isFocused?: boolean;
 }
-const InputSelect: React.FC<InputSelectProps> = memo(({ className, title, name, srcIcon, options, value, error, onChange }) => {
+const InputSelect: React.FC<InputSelectProps> = memo(({
+	className,
+	name,
+	value,
+	errors,
+	title,
+	srcIcon,
+	options,
+	onChange,
+	onBlur,
+	isFocused
+}) => {
+
+	const localRef = useRef<HTMLInputElement>(null);
+
+	useEffect(() => {
+		if (isFocused) {
+			localRef.current?.focus();
+		}
+	}, []);
 	return (
 		<div className={className}>
 			<div className="form-inner mb-25">
 				<label htmlFor={name}>{title}</label>
 				<div className="input-area">
-					<img src={srcIcon} alt="" />
+					{srcIcon ? <img src={srcIcon} alt="" /> : null}
 					<select
 						className="nice-select"
 						onChange={onChange}
+						onBlur={onBlur}
 						value={value}
 						id={name}
 						name={name}>
@@ -31,8 +48,7 @@ const InputSelect: React.FC<InputSelectProps> = memo(({ className, title, name, 
 						})}
 					</select>
 				</div>
-				{error ? <InputError message={error} /> : null}
-
+				{errors?.[name] ? <InputError message={errors[name]} /> : null}
 			</div>
 		</div>
 	)
