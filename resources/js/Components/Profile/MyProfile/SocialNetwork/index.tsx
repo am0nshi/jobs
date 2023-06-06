@@ -1,4 +1,4 @@
-import InputText from '@/Components/InputText'
+import InputText from '@/Components/InputText';
 //icons
 import FacebookIcon from "/public/assets/images/icon/facebook-2.svg";
 import TwitterIcon from "/public/assets/images/icon/twiter-2.svg";
