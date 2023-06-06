@@ -16,7 +16,7 @@ const Profile = () => {
             <ProfileSidebar />
           </div>
           <div className="col-lg-9">
-            <Dashboard />
+            {/*  <Dashboard /> */}
             {/* <MyProfile /> */}
             {/*  <AppliedJobs /> */}
             {/* <Bookmark /> */}
