@@ -5,12 +5,9 @@ export interface TextAreaProps extends InputHTMLAttributes<HTMLTextAreaElement> 
   isFocused?: boolean;
 }
 const TextArea: React.FC<TextAreaProps> = memo(({
-  className,
   name,
   value,
   title,
-  srcIcon,
-  autoComplete,
   placeholder,
   onChange,
   onBlur,
@@ -29,7 +26,6 @@ const TextArea: React.FC<TextAreaProps> = memo(({
       <textarea
         onChange={onChange}
         onBlur={onBlur}
-        autoComplete={autoComplete ? autoComplete : "on"}
         value={value || ""}
         id={name}
         name={name}

@@ -11,6 +11,8 @@ import DesignationIcon from "/public/assets/images/icon/designation-2.svg";
 import InputSelect from '@/Components/InputSelect';
 import QualificationIcon from "/public/assets/images/icon/qualification-2.svg";
 import LanguageIcon from "/public/assets/images/icon/language-2.svg";
+import TextArea from '@/Components/TextArea';
+import SocialNetwork from './SocialNetwork';
 
 //Options for InputSelect
 const qualificationOptions: string[] = ["Bachelor Degree in CSE", "IGCSE", "AS", "A Level", "Matriculated"];
@@ -107,91 +109,20 @@ const MyProfile = () => {
               />
             </div>
             <div className="col-md-12">
-              <div className="form-inner mb-50">
-                <label>Description*</label>
-                <textarea placeholder="Write something about yourself.........." ></textarea>
-              </div>
+              <TextArea
+                name="description"
+                placeholder='Write something about yourself..........'
+                title='Description*' />
             </div>
             <div className="col-md-12">
               <div className="form-inner">
                 <button className="primry-btn-2 lg-btn w-unset" type="submit">Update Profile</button>
               </div>
             </div>
-
           </div>
         </form>
       </div>
-
-      <div className="form-wrapper">
-        <div className="section-title">
-          <h5>Social Network:</h5>
-        </div>
-        <form className="profile-form">
-          <div className="row">
-
-            <div className="col-md-6">
-              <div className="form-inner mb-25">
-                <label>Facebook</label>
-                <div className="input-area">
-                  <img src="assets/images/icon/facebook-2.svg" alt="" />
-                  <input type="text" placeholder="https://example-facebook.com" />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="form-inner mb-25">
-                <label>Twitter</label>
-                <div className="input-area">
-                  <img src="assets/images/icon/twiter-2.svg" alt="" />
-                  <input type="text" placeholder="https://example-twitter.com" />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="form-inner mb-25">
-                <label>LinkedIn</label>
-                <div className="input-area">
-                  <img src="assets/images/icon/linkedin-2.svg" alt="" />
-                  <input type="text" placeholder="https://example-linkedin.com" />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="form-inner mb-25">
-                <label>Pinterest</label>
-                <div className="input-area">
-                  <img src="assets/images/icon/pinterest-2.svg" alt="" />
-                  <input type="text" placeholder="https://example-pinterest.com" />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="form-inner mb-25">
-                <label>Dribbble</label>
-                <div className="input-area">
-                  <img src="assets/images/icon/dribble-2.svg" alt="" />
-                  <input type="text" placeholder="https://example-dribbble.com" />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="form-inner mb-50">
-                <label>Behance</label>
-                <div className="input-area">
-                  <img src="assets/images/icon/behance-2.svg" alt="" />
-                  <input type="text" placeholder="https://example-behance.com" />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="form-inner">
-                <button className="primry-btn-2 lg-btn w-unset" type="submit">Edit Social</button>
-              </div>
-            </div>
-
-          </div>
-        </form>
-      </div>
+      <SocialNetwork />
 
     </div>
   )
