@@ -1,4 +1,4 @@
-import React, { memo, InputHTMLAttributes } from 'react'
+import React, { useRef, useEffect, memo, InputHTMLAttributes } from 'react'
 import InputError from '../InputError';
 
 export interface InputSelectProps extends InputHTMLAttributes<HTMLSelectElement> {
@@ -6,6 +6,7 @@ export interface InputSelectProps extends InputHTMLAttributes<HTMLSelectElement>
   name: string,
   srcIcon?: string;
   errors?: { [key: string]: string | undefined };
+  isFocused?: boolean;
 }
 const InputSelect: React.FC<InputSelectProps> = memo(({
   className,
@@ -16,8 +17,17 @@ const InputSelect: React.FC<InputSelectProps> = memo(({
   srcIcon,
   options,
   onChange,
-  onBlur, }) => {
+  onBlur,
+  isFocused
+}) => {
 
+  const localRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (isFocused) {
+      localRef.current?.focus();
+    }
+  }, []);
   return (
     <div className={className}>
       <div className="form-inner mb-25">
