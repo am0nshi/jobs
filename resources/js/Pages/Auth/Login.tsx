@@ -55,7 +55,8 @@ export default function Login({ status, canResetPassword }: { status?: string, c
                                         srcIcon={EmailIcon}
                                         isFocused={true}
                                         errors={errors}
-                                        placeholder="Jonson" />
+                                        placeholder="Jonson"
+                                      />
 
                                       <InputPassword
                                         value={data.password}
@@ -81,7 +82,10 @@ export default function Login({ status, canResetPassword }: { status?: string, c
                                           <div className="form-inner">
                                               <button
                                                 disabled={processing}
-                                                className="primry-btn-2" type="submit">LogIn</button>
+                                                className="primry-btn-2" type="submit"
+                                              >
+                                                  LogIn
+                                              </button>
                                           </div>
                                       </div>
                                       <h6>
