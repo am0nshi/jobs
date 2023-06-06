@@ -1,4 +1,4 @@
-import React from 'react'
+import CounterArea from "./CounterArea"
 
 const Dashboard = () => {
   return (
@@ -12,74 +12,7 @@ const Dashboard = () => {
           <h4>JACOLINE  Frankly</h4>
         </div>
       </div>
-      <div className="counter-area">
-        <div className="row g-lg-4 g-md-5 gy-5 justify-content-center">
-          <div className="col-lg-3 col-sm-6">
-            <div className="counter-single">
-              <div className="counter-icon">
-                <img src="assets/images/icon/tt-applied.svg" alt="image" />
-              </div>
-              <div className="coundown">
-                <p>Total Applied</p>
-                <div className="d-flex align-items-center">
-                  <h3 className="odometer">
-                    250
-                  </h3>
-                  <span>+</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="counter-single two">
-              <div className="counter-icon">
-                <img src="assets/images/icon/save-job.svg" alt="image" />
-              </div>
-              <div className="coundown">
-                <p>Saved Jobs</p>
-                <div className="d-flex align-items-center">
-                  <h3 className="odometer">
-                    150
-                  </h3>
-                  <span>+</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="counter-single three">
-              <div className="counter-icon">
-                <img src="assets/images/icon/massage.svg" alt="image" />
-              </div>
-              <div className="coundown">
-                <p>Message</p>
-                <div className="d-flex align-items-center">
-                  <h3 className="odometer">
-                    120
-                  </h3>
-                  <span>+</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-sm-6">
-            <div className="counter-single four">
-              <div className="counter-icon">
-                <img src="assets/images/icon/cv-review.svg" alt="image" />
-              </div>
-              <div className="coundown">
-                <p>Review CV</p>
-                <div className="d-flex align-items-center">
-                  <h3 className="odometer">
-                    500
-                  </h3>
-                  <span>+</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CounterArea />
       <div className="table-wrapper">
         <h5 className="title">Current Applied Jobs:</h5>
         <div className="scroll-table">
