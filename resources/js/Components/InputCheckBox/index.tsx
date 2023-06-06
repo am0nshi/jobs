@@ -1,33 +1,41 @@
 import React from 'react'
 import InputError from '../InputError';
-interface InputTextProps {
-	className: string,
-	name: string;
-	text: string;
-	placeholder?: string;
-	value: boolean;
-	children?: JSX.Element,
-	error?: string;
-	onBlur?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-	onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-	onClickIcon?: () => void;
+import {InputTextProps} from "@/Components/InputText";
+
+export interface InputCheckboxProps extends Omit<InputTextProps, 'value'> {
+  text?: string,
+  value: boolean;
 }
-const InputCheckBox: React.FC<InputTextProps> = ({ children, className, name, text, value, error, onChange }) => {
-	return (
-		<div className={className}>
-			<div className="form-agreement form-inner d-flex justify-content-between flex-wrap">
-				<div className="form-group two">
-					<input type="checkbox"
-						id={name} name={name}
-						onChange={onChange}
-						checked={value} />
-					<label htmlFor={name}>{text}</label>
-				</div>
-				{children}
-				{error ? <InputError message={error} /> : null}
-			</div>
-		</div>
-	)
+
+const InputCheckBox: React.FC<InputCheckboxProps> = ({
+  children,
+  className,
+  name,
+  text,
+  value,
+  errors,
+  onChange
+}) => {
+  return (
+    <div className={className}>
+      <div className="form-agreement form-inner d-flex justify-content-between flex-wrap">
+        <div className="form-group two">
+          <input
+            type="checkbox"
+            id={name}
+            name={name}
+            onChange={onChange}
+            checked={value}
+          />
+          <label htmlFor={name}>
+            {text}
+          </label>
+          {errors?.[name] ? <InputError message={errors[name]} /> : null}
+        </div>
+        {children}
+      </div>
+    </div>
+  )
 }
 
 export default InputCheckBox
