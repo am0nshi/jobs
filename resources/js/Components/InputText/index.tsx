@@ -2,7 +2,7 @@ import React, { InputHTMLAttributes, memo, useEffect, useRef } from 'react';
 import InputError from '../InputError';
 
 export interface InputTextProps extends InputHTMLAttributes<HTMLInputElement> {
-  name: string,
+  name: string;
   srcIcon?: string;
   errors?: Record<string, string | undefined>;
   isFocused?: boolean;
