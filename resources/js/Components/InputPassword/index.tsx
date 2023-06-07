@@ -6,12 +6,12 @@ const InputPassword: React.FC<InputTextProps> = memo(({
 	name,
 	title,
 	placeholder,
-	value,
+	value, 
 	errors,
 	onBlur,
 	onChange,
 	isFocused,
-	srcIcon
+  srcIcon,
 }) => {
 	const localRef = useRef<HTMLInputElement>(null);
 
@@ -38,7 +38,7 @@ const InputPassword: React.FC<InputTextProps> = memo(({
 			<div className="form-inner">
 				<label htmlFor={name}>{title}</label>
 				{srcIcon ? <img src={srcIcon} alt="" /> : null}
-				<input
+        <input
 					onChange={onChange}
 					onBlur={onBlur}
 					value={value}
