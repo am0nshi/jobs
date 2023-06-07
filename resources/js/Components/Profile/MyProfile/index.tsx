@@ -123,7 +123,6 @@ const MyProfile = () => {
         </form>
       </div>
       <SocialNetwork />
-
     </div>
   )
 }

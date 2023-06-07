@@ -17,11 +17,11 @@ const Profile = () => {
           </div>
           <div className="col-lg-9">
             {/*  <Dashboard /> */}
-            {/* <MyProfile /> */}
+            {/*  <MyProfile /> */}
             {/*  <AppliedJobs /> */}
             {/* <Bookmark /> */}
             {/* <EditResume /> */}
-            {/* <Settings /> */}
+            <Settings />
           </div>
         </div>
       </div>

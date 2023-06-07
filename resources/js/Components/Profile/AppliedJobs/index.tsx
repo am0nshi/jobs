@@ -1,4 +1,4 @@
-import React from 'react'
+import Vacancie from '../Vacansie'
 
 const AppliedJobs = () => {
   return (
@@ -19,131 +19,62 @@ const AppliedJobs = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td data-label="Job Title">
-                <div className="company-info">
-                  <div className="logo">
-                    <img src="assets/images/bg/company-logo/company-06.png" alt="" />
-                  </div>
-                  <div className="company-details">
-                    <div className="top">
-                      <h6><a href="job-details.html">Senior UI/UX Designer</a></h6>
-                      <span><img src="assets/images/icon/calender2.svg" alt="" /> 1 days ago</span>
-                    </div>
-                    <ul>
-                      <li><img src="assets/images/icon/location.svg" alt="" />New-York, USA</li>
-                      <li>
-                        <img src="assets/images/icon/arrow2.svg" alt="" />
-                        <p><span className="title">Salary:</span> $60-$90 / <span className="time">Per Hour</span></p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </td>
-              <td data-label="Apply Job">03/07/2022</td>
-              <td data-label="Company"><a className="view-btn" href="company-details.html">Tech.Bath Com... </a></td>
-              <td data-label="Status"><button className="eg-btn purple-btn">Viewed</button></td>
-            </tr>
-            <tr>
-              <td data-label="Job Title">
-                <div className="company-info">
-                  <div className="logo">
-                    <img src="assets/images/bg/company-logo/company-02.png" alt="" />
-                  </div>
-                  <div className="company-details">
-                    <div className="top">
-                      <h6><a href="job-details.html">React JS Developer</a></h6>
-                      <span><img src="assets/images/icon/calender2.svg" alt="" /> 1 days ago</span>
-                    </div>
-                    <ul>
-                      <li><img src="assets/images/icon/location.svg" alt="" />Dhaka, Bangladesh</li>
-                      <li>
-                        <img src="assets/images/icon/arrow2.svg" alt="" />
-                        <p><span className="title">Salary:</span> $80-$100 / <span className="time">Per Hour</span></p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </td>
-              <td data-label="Apply Job">07/07/2022</td>
-              <td data-label="Company"><a className="view-btn" href="company-details.html">Gangster Group</a></td>
-              <td data-label="Status"><button className="eg-btn yellow-btn">Interview</button></td>
-            </tr>
-            <tr>
-              <td data-label="Job Title">
-                <div className="company-info">
-                  <div className="logo">
-                    <img src="assets/images/bg/company-logo/company-03.png" alt="" />
-                  </div>
-                  <div className="company-details">
-                    <div className="top">
-                      <h6><a href="job-details.html">WordPress Developer</a></h6>
-                      <span><img src="assets/images/icon/calender2.svg" alt="" /> 2 days ago</span>
-                    </div>
-                    <ul>
-                      <li><img src="assets/images/icon/location.svg" alt="" />West London, UK</li>
-                      <li>
-                        <img src="assets/images/icon/arrow2.svg" alt="" />
-                        <p><span className="title">Salary:</span> $30K-$40K / <span className="time">Monthly</span></p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </td>
-              <td data-label="Apply Job">10/07/2022</td>
-              <td data-label="Company"><a className="view-btn" href="company-details.html">Zoomly.Co Ltd</a></td>
-              <td data-label="Status"><button className="eg-btn orenge-btn">Canceled</button></td>
-            </tr>
-            <tr>
-              <td data-label="Job Title">
-                <div className="company-info">
-                  <div className="logo">
-                    <img src="assets/images/bg/company-logo/company-04.png" alt="" />
-                  </div>
-                  <div className="company-details">
-                    <div className="top">
-                      <h6><a href="job-details.html">Mern-Stack Developer</a></h6>
-                      <span><img src="assets/images/icon/calender2.svg" alt="" /> 1 week ago</span>
-                    </div>
-                    <ul>
-                      <li><img src="assets/images/icon/location.svg" alt="" />New-York, USA</li>
-                      <li>
-                        <img src="assets/images/icon/arrow2.svg" alt="" />
-                        <p><span className="title">Salary:</span> $20-$50 / <span className="time">Per Hour</span></p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </td>
-              <td data-label="Apply Job">13/07/2022</td>
-              <td data-label="Company"><a className="view-btn" href="company-details.html">Marko-land Ltd</a></td>
-              <td data-label="Status"><button className="eg-btn purple-btn">Viewed</button></td>
-            </tr>
-            <tr>
-              <td data-label="Job Title">
-                <div className="company-info">
-                  <div className="logo">
-                    <img src="assets/images/bg/company-logo/company-05.png" alt="" />
-                  </div>
-                  <div className="company-details">
-                    <div className="top">
-                      <h6><a href="job-details.html">PHP Developer</a></h6>
-                      <span><img src="assets/images/icon/calender2.svg" alt="" /> 2 week ago</span>
-                    </div>
-                    <ul>
-                      <li><img src="assets/images/icon/location.svg" alt="" />New-York, USA</li>
-                      <li>
-                        <img src="assets/images/icon/arrow2.svg" alt="" />
-                        <p><span className="title">Salary:</span> $40K-$60K / <span className="time">Per Month</span></p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </td>
-              <td data-label="Apply Job">18/08/2022</td>
-              <td data-label="Company"><a className="view-btn" href="company-details.html">Bistro.Tech Group</a></td>
-              <td data-label="Status"><button className="eg-btn green-btn">Success</button></td>
-            </tr>
+            <Vacancie
+              logoSrc="assets/images/bg/company-logo/company-06.png"
+              jobTitle="Senior UI/UX Designer"
+              postedDate="1 days ago"
+              aplyDate="03/07/2022"
+              location="New-York, USA"
+              salary="$60-$90"
+              salaryTime="Per Hour"
+              companyName="Tech.Bath Com..."
+              status="Viewed"
+            />
+            <Vacancie
+              logoSrc="assets/images/bg/company-logo/company-06.png"
+              jobTitle="React JS Developer"
+              postedDate="1 days ago"
+              location="Dhaka, Bangladesh"
+              aplyDate="07/07/2022"
+              salary="$80-$100"
+              salaryTime="Per Hour"
+              companyName="Gangster Group"
+              status="Viewed"
+            />
+
+            <Vacancie
+              logoSrc="assets/images/bg/company-logo/company-06.png"
+              jobTitle="WordPress Developer"
+              postedDate="2 days ago"
+              location="West London, UK"
+              aplyDate="10/07/2022"
+              salary="$30K-$40K"
+              salaryTime="Monthly"
+              companyName="Zoomly.Co Ltd"
+              status="Canceled"
+            />
+            <Vacancie
+              logoSrc="assets/images/bg/company-logo/company-06.png"
+              jobTitle="Mern-Stack Developer"
+              postedDate="1 week ago"
+              location="New-York, USA"
+              aplyDate="13/07/2022"
+              salary="$20-$50"
+              salaryTime="Per Hour"
+              companyName="Marko-land Ltd"
+              status="Viewed"
+            />
+            <Vacancie
+              logoSrc="assets/images/bg/company-logo/company-06.png"
+              jobTitle="PHP Developer"
+              postedDate="2 week ago"
+              location="New-York, USA"
+              aplyDate="18/08/2022"
+              salary="$40K-$60K"
+              salaryTime="Per Month"
+              companyName="Bistro.Tech Group"
+              status="Success"
+            />
           </tbody>
         </table>
         <div className="pagination-table-info">

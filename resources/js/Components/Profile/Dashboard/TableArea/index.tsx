@@ -1,4 +1,4 @@
-import Vacancie from "./Vacansie"
+import Vacancie from "../../Vacansie"
 
 const TableArea = () => {
   return (
@@ -24,7 +24,7 @@ const TableArea = () => {
               salary="$60-$90"
               salaryTime="Per Hour"
               companyName="Tech.Bath Com..."
-              status="viewed"
+              status="Viewed"
             />
             <Vacancie
               logoSrc="assets/images/bg/company-logo/company-06.png"
@@ -35,7 +35,7 @@ const TableArea = () => {
               salary="$80-$100"
               salaryTime="Per Hour"
               companyName="Gangster Group"
-              status="viewed"
+              status="Viewed"
             />
 
             <Vacancie
