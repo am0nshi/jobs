@@ -2,7 +2,7 @@ import React, { useRef, useEffect, memo, InputHTMLAttributes } from 'react'
 import InputError from '../InputError';
 
 export interface InputSelectProps extends InputHTMLAttributes<HTMLSelectElement> {
-	options: Array<string>;
+	options: Record<string, string>;
 	name: string,
 	srcIcon?: string;
 	errors?: { [key: string]: string | undefined };
@@ -41,9 +41,9 @@ const InputSelect: React.FC<InputSelectProps> = memo(({
 						value={value}
 						id={name}
 						name={name}>
-						{options.map((option, index) => {
+						{Object.keys(options).map((key) => {
 							return (
-								<option key={index} value={option}>{option}</option>
+								<option key={key} value={key}>{options[key]}</option>
 							)
 						})}
 					</select>
