@@ -33,7 +33,7 @@ Route::get('/my-profile', function () {
     return Inertia::render('Profile/MyProfile');
 });
 
-Route::get('/applied-job', function () {
+Route::get('/applied-jobs', function () {
     return Inertia::render('Profile/AppliedJobs');
 });
 
