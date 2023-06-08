@@ -2,6 +2,8 @@
 
 namespace App\Http\Requests\Auth;
 
+use App\Services\Enums\Company\CompanyTypeEnum;
+
 class RegisterCompanyRequest extends RegisterUserRequest
 {
     /**
@@ -13,7 +15,14 @@ class RegisterCompanyRequest extends RegisterUserRequest
     {
         return parent::rules() + [
             'company_name' => ['required', 'string', 'max:127'],
-            'company_type' => ['required', 'string', 'max:127'],
+            'company_type' => [
+                'required',
+                'string',
+                'in:' . implode(
+                ',',
+                    CompanyTypeEnum::getTypes()
+                )
+            ],
         ];
     }
 }

@@ -1,5 +1,5 @@
 import React, {FormEventHandler, memo, useState} from 'react';
-import {Head, Link, useForm} from '@inertiajs/react';
+import {Head, useForm} from '@inertiajs/react';
 import RegisterHeader from "@/Components/Register/RegisterHeader";
 import {RegistrationTypes} from "@/Enums/RegistrationTypeEnum";
 import InputText from "@/Components/InputText";
@@ -14,18 +14,15 @@ import CompanyIcon from "/public/assets/images/icon/company-2.svg";
 import CategoryIcon from "/public/assets/images/icon/category-2.svg";
 import InputSelect from "@/Components/InputSelect";
 
-export default function RegisterCompany() {
-  const options = ["Digital Agency", "Digital Marketing Agency", "Software Company"];
-
+export default function RegisterCompany({ types }: { types: Record<string, string> }) {
   const fields: RegisterCompanyRequest = {
     first_name: "",
     last_name: "",
-    user_name: "",
     email: "",
     password: "",
     password_confirmation: "",
     company_name: "",
-    company_type: options[0],
+    company_type: Object.keys(types)[0],
     agreement: false,
   }
 
@@ -89,20 +86,9 @@ export default function RegisterCompany() {
                           />
 
                           <InputText
-                            value={data.user_name}
-                            onChange={e => setData('user_name', e.target.value)}
-                            className="col-md-6"
-                            name="user_name"
-                            title="User Name*"
-                            srcIcon={UserIcon}
-                            placeholder="Jonson"
-                            errors={errors}
-                          />
-
-                          <InputText
                             value={data.email}
                             onChange={e => setData('email', e.target.value)}
-                            className="col-md-6"
+                            className="col-md-12"
                             name="email"
                             title="Email*"
                             srcIcon={EmailIcon}
@@ -128,7 +114,7 @@ export default function RegisterCompany() {
                             name="company_type"
                             title="Company Type*"
                             srcIcon={CategoryIcon}
-                            options={options}
+                            options={types}
                             errors={errors}
                           />
 

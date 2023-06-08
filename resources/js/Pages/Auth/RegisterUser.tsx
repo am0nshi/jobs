@@ -15,7 +15,6 @@ export default function RegisterUser() {
   const fields: RegisterUserRequest = {
     first_name: "",
     last_name: "",
-    user_name: "",
     email: "",
     password: "",
     password_confirmation: "",
@@ -82,20 +81,9 @@ export default function RegisterUser() {
                           />
 
                           <InputText
-                            value={data.user_name}
-                            onChange={e => setData('user_name', e.target.value)}
-                            className="col-md-6"
-                            name="user_name"
-                            title="User Name*"
-                            srcIcon={UserIcon}
-                            placeholder="Jonson"
-                            errors={errors}
-                          />
-
-                          <InputText
                             value={data.email}
                             onChange={e => setData('email', e.target.value)}
-                            className="col-md-6"
+                            className="col-md-12"
                             name="email"
                             title="Email*"
                             srcIcon={EmailIcon}

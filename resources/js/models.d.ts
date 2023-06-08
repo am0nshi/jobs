@@ -22,7 +22,6 @@ declare namespace App.Http.Requests.Auth {
     export interface RegisterCompanyRequest extends Record<string, unknown> {
         first_name: string;
         last_name: string;
-        user_name: string;
         email: string;
         password: string;
         password_confirmation: string;
@@ -39,7 +38,6 @@ declare namespace App.Http.Requests.Auth {
     export interface RegisterUserRequest extends Record<string, unknown> {
         first_name: string;
         last_name: string;
-        user_name: string;
         email: string;
         password: string;
         password_confirmation: string;
