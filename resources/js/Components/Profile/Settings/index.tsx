@@ -1,5 +1,3 @@
-import React from 'react'
-
 import ChangePassword from './ChangePassword'
 import ChangePhoneEmail from './ChangePhoneEmail'
 import ChangeLocation from './ChangeLocation'

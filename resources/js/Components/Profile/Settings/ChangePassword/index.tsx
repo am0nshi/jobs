@@ -1,5 +1,4 @@
-import InputPassword from '@/Components/InputPassword'
-import React from 'react'
+import InputPassword from '@/Components/InputPassword';
 
 const ChangePassword = () => {
   return (
