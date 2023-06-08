@@ -1,4 +1,8 @@
 import InputText from '@/Components/InputText';
+import TextArea from '@/Components/TextArea';
+import InputSelect from '@/Components/InputSelect';
+import SocialNetwork from './SocialNetwork';
+
 //Icons
 import UserIcon from "/public/assets/images/icon/user-2.svg";
 import ClockIcon from "/public/assets/images/icon/clock-2.svg";
@@ -8,17 +12,23 @@ import EmailIcon from "/public/assets/images/icon/email-2.svg";
 import WebsiteIcon from "/public/assets/images/icon/website-2.svg";
 import CompanyIcon from "/public/assets/images/icon/company-2.svg";
 import DesignationIcon from "/public/assets/images/icon/designation-2.svg";
-import InputSelect from '@/Components/InputSelect';
 import QualificationIcon from "/public/assets/images/icon/qualification-2.svg";
 import LanguageIcon from "/public/assets/images/icon/language-2.svg";
-import TextArea from '@/Components/TextArea';
-import SocialNetwork from './SocialNetwork';
-import Header from '@/Components/Header';
-import Footer from '@/Components/Footer';
 
 //Options for InputSelect
-const qualificationOptions: string[] = ["Bachelor Degree in CSE", "IGCSE", "AS", "A Level", "Matriculated"];
-const languageOptions: string[] = ["Bangla", "English", "Spanish", "Italian"];
+const qualificationOptions = {
+  "Bachelor Degree in CSE": "Bachelor Degree in CSE",
+  "IGCSE": "IGCSE",
+  "AS": "AS",
+  "A Level": "A Level",
+  "Matriculated": "Matriculated"
+};
+const languageOptions = {
+  "Bangla": "Bangla",
+  "English": "English",
+  "Spanish": "Spanish",
+  "Italian": "Italian"
+};
 
 const MyProfile = () => {
   return (
@@ -38,7 +48,6 @@ const MyProfile = () => {
                 />
               </div>
               <div className="col-md-6">
-
                 <InputText name="age"
                   placeholder='21 Years'
                   srcIcon={ClockIcon}
@@ -91,7 +100,6 @@ const MyProfile = () => {
                   placeholder='UI/UX Engineer'
                   srcIcon={DesignationIcon}
                   title="Designation*"
-
                 />
               </div>
               <div className="col-md-6">
