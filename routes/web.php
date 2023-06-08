@@ -25,9 +25,36 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
+/* Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard'); */
+
+Route::get('/my-profile', function () {
+    return Inertia::render('Profile/MyProfile');
+});
+
+Route::get('/applied-job', function () {
+    return Inertia::render('Profile/AppliedJobs');
+});
+
+Route::get('/settings', function () {
+    return Inertia::render('Profile/Settings');
+});
+
+Route::get('/view-resume', function () {
+    return Inertia::render('Profile/ViewResume');
+});
+Route::get('/bookmark', function () {
+    return Inertia::render('Profile/Bookmark');
+});
+
+Route::get('/dashboard', function () {
+    return Inertia::render('Profile/Dashboard');
+});
+
+Route::get('/edit-resume', function () {
+    return Inertia::render('Profile/EditResume');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
