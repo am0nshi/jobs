@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 export interface VacancieProps {
   logoSrc: string;
   jobTitle: string;
@@ -8,7 +8,8 @@ export interface VacancieProps {
   salary: string;
   salaryTime: string;
   companyName: string;
-  status: string;
+  status?: string;
+  action?: boolean;
 }
 const Vacancie: React.FC<VacancieProps> = ({
   logoSrc,
@@ -19,7 +20,21 @@ const Vacancie: React.FC<VacancieProps> = ({
   salary,
   salaryTime,
   companyName,
-  status }) => {
+  status,
+  action }) => {
+
+  const statusClass = (status: string) => {
+    switch (status) {
+      case 'Viewed':
+        return 'eg-btn purple-btn  ';
+      case 'Canceled':
+        return 'eg-btn orenge-btn';
+      case 'Success':
+        return 'eg-btn green-btn';
+      case "Interview":
+        return "eg-btn yellow-btn";
+    }
+  }
 
   return (
     <tr>
@@ -45,7 +60,8 @@ const Vacancie: React.FC<VacancieProps> = ({
       </td>
       <td data-label="Apply Job">{aplyDate}</td>
       <td data-label="Company"><a className="view-btn" href="company-details.html">{companyName} </a></td>
-      <td data-label="Status"><button className="eg-btn purple-btn">{status}</button></td>
+      {status ? <td data-label="Status"><button className={statusClass(status)}>{status}</button></td> : null}
+      {action ? <td data-label="Action"><button className="view-btn">Apply Now</button></td> : null}
     </tr>
   )
 }
