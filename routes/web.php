@@ -67,7 +67,7 @@ Route::get('/edit-resume/education', function () {
 });
 
 Route::get('/edit-resume/professional-info', function () {
-    return Inertia::render('Profile/EditResume/Education');
+    return Inertia::render('Profile/EditResume/ProfessionalInfo');
 });
 
 /* EditResume routes END */
