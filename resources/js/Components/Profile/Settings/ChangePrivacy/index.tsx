@@ -1,4 +1,4 @@
-import PrivacyCheckBox from "./PrivacyCheckBox"
+import PrivacyCheckBox from "../../../ToggleCheckBox"
 
 const ChangePrivacy = () => {
   return (

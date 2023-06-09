@@ -3,7 +3,7 @@ export interface PrivacyCheckBoxProps {
   title: string;
   text?: string
 }
-const PrivacyCheckBox: React.FC<PrivacyCheckBoxProps> = ({ title, text }) => {
+const ToggleCheckBox: React.FC<PrivacyCheckBoxProps> = ({ title, text }) => {
   return (
     <div className="single-permission mb-2">
       <div className="title">
@@ -17,4 +17,4 @@ const PrivacyCheckBox: React.FC<PrivacyCheckBoxProps> = ({ title, text }) => {
   )
 }
 
-export default PrivacyCheckBox
+export default ToggleCheckBox
