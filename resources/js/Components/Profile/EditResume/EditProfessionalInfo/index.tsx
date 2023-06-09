@@ -15,7 +15,7 @@ const desigationOptions = {
   "Full-stack developer": "Full-stack developer",
 };
 
-const EditPersonalInfo = () => {
+const EditProfessionalInfo = () => {
   const { data, errors, setData, reset } = useForm({
 
     company: "",
@@ -128,4 +128,4 @@ const EditPersonalInfo = () => {
   )
 }
 
-export default EditPersonalInfo
+export default EditProfessionalInfo

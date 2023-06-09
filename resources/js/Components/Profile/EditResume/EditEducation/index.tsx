@@ -1,5 +1,5 @@
 import InputSelect from '@/Components/InputSelect'
-import React from 'react'
+
 
 import QualificationIcon from "/public/assets/images/icon/qualification-2.svg";
 import MajorIcon from "/public/assets/images/icon/major.svg"
