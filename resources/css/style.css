@@ -9790,7 +9790,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   transition: 0.35s;
 }
 .pagination-area .pagination .page-item:last-child .page-link::after {
-  content: url(../images/icon/explore-arrow.svg);
+  content: url(/public/assets/images/icon/explore-arrow.svg);
   position: relative;
   right: 10px;
   top: 2px;
@@ -9800,7 +9800,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   background-color: var(--white);
 }
 .pagination-area .pagination .page-item:last-child .page-link:hover::after {
-  content: url(../images/icon/explore-arrow.svg);
+  content: url(/public/assets/images/icon/explore-arrow.svg);
   position: relative;
   right: 0px;
   top: 2px;
@@ -9815,7 +9815,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   transition: 0.35s;
 }
 .pagination-area .pagination .page-item:first-child .page-link::after {
-  content: url(../images/icon/explore-arrow-left.svg);
+  content: url(/public/assets/images/icon/explore-arrow-left.svg);
   position: relative;
   left: 10px;
   top: 2px;
@@ -9825,7 +9825,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   background-color: var(--white);
 }
 .pagination-area .pagination .page-item:first-child .page-link:hover::after {
-  content: url(../images/icon/explore-arrow-left.svg);
+  content: url(/public/assets/images/icon/explore-arrow-left.svg);
   position: relative;
   left: 0px;
   top: 2px;

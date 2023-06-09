@@ -23,6 +23,7 @@ const Settings = () => {
     e.preventDefault();
     reset();
   };
+
   return (
     <div className="form-wrapper">
       <form className="profile-form" onSubmit={onSubmit}>

@@ -1,3 +1,5 @@
+import { FormEventHandler } from "react"
+
 import InputText from '@/Components/InputText';
 import TextArea from '@/Components/TextArea';
 import InputSelect from '@/Components/InputSelect';
@@ -14,6 +16,7 @@ import CompanyIcon from "/public/assets/images/icon/company-2.svg";
 import DesignationIcon from "/public/assets/images/icon/designation-2.svg";
 import QualificationIcon from "/public/assets/images/icon/qualification-2.svg";
 import LanguageIcon from "/public/assets/images/icon/language-2.svg";
+import { useForm } from '@inertiajs/react';
 
 //Options for InputSelect
 const qualificationOptions = {
@@ -31,6 +34,24 @@ const languageOptions = {
 };
 
 const MyProfile = () => {
+  const { data, errors, setData, reset } = useForm({
+    name: "",
+    age: "",
+    location: "",
+    phone: "",
+    email: "",
+    websiteLink: "",
+    companyName: "",
+    designation: "",
+    qualification: "",
+    language: "",
+    description: ""
+  })
+
+  const onSubmit: FormEventHandler = (e) => {
+    e.preventDefault();
+    reset();
+  };
   return (
     <>
       <div className="my-profile-inner">
@@ -38,10 +59,16 @@ const MyProfile = () => {
           <div className="section-title">
             <h5>My Profile</h5>
           </div>
-          <form className="profile-form">
+          <form
+            onSubmit={onSubmit}
+            className="profile-form">
             <div className="row">
               <div className="col-md-6">
-                <InputText name="name"
+                <InputText
+                  onChange={e => setData('name', e.target.value)}
+                  name="name"
+                  value={data.name}
+                  errors={errors}
                   placeholder='Mr. Robert'
                   srcIcon={UserIcon}
                   title='First Name*'
@@ -49,6 +76,9 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputText name="age"
+                  onChange={e => setData('age', e.target.value)}
+                  value={data.age}
+                  errors={errors}
                   placeholder='21 Years'
                   srcIcon={ClockIcon}
                   title='Your Age*'
@@ -56,6 +86,9 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputText
+                  onChange={e => setData('location', e.target.value)}
+                  value={data.location}
+                  errors={errors}
                   name="location"
                   placeholder='Mirput, Dhaka'
                   srcIcon={LocationIcon}
@@ -64,6 +97,9 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputText
+                  onChange={e => setData('phone', e.target.value)}
+                  value={data.phone}
+                  errors={errors}
                   name="phone"
                   placeholder='+880-17 *** *** **'
                   srcIcon={PhoneIcon}
@@ -72,6 +108,9 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputText
+                  onChange={e => setData('email', e.target.value)}
+                  value={data.email}
+                  errors={errors}
                   name="email"
                   placeholder='info@example.com'
                   srcIcon={EmailIcon}
@@ -80,6 +119,9 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputText
+                  onChange={e => setData('websiteLink', e.target.value)}
+                  value={data.websiteLink}
+                  errors={errors}
                   name="websiteLink"
                   placeholder='https://example.com'
                   srcIcon={WebsiteIcon}
@@ -88,6 +130,9 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputText
+                  onChange={e => setData('companyName', e.target.value)}
+                  value={data.companyName}
+                  errors={errors}
                   name="companyName"
                   placeholder='Company Name'
                   srcIcon={CompanyIcon}
@@ -96,7 +141,10 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputText
-                  name="companyName"
+                  onChange={e => setData('designation', e.target.value)}
+                  value={data.designation}
+                  errors={errors}
+                  name="designation"
                   placeholder='UI/UX Engineer'
                   srcIcon={DesignationIcon}
                   title="Designation*"
@@ -104,6 +152,9 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputSelect
+                  onChange={e => setData('qualification', e.target.value)}
+                  value={data.qualification}
+                  errors={errors}
                   name='qualification'
                   srcIcon={QualificationIcon}
                   options={qualificationOptions}
@@ -112,14 +163,19 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputSelect
-                  name='qualification'
+                  onChange={e => setData('language', e.target.value)}
+                  value={data.language}
+                  errors={errors}
+                  name='language'
                   srcIcon={LanguageIcon}
                   options={languageOptions}
-                  title='Qualification*'
+                  title='Language*'
                 />
               </div>
               <div className="col-md-12">
                 <TextArea
+                  onChange={e => setData('description', e.target.value)}
+                  value={data.description}
                   name="description"
                   placeholder='Write something about yourself..........'
                   title='Description*' />

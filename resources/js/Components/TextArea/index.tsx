@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, memo, InputHTMLAttributes } from 'react'
 export interface TextAreaProps extends InputHTMLAttributes<HTMLTextAreaElement> {
   name: string,
-  srcIcon?: string;
   isFocused?: boolean;
 }
 const TextArea: React.FC<TextAreaProps> = memo(({
