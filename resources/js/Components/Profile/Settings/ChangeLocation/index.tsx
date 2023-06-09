@@ -1,7 +1,14 @@
 import InputText from '@/Components/InputText'
-import React from 'react'
+import { ChangeEventHandler } from "react"
 import MapIcon from "/public/assets/images/icon/map-2.svg"
-const ChangeLocation = () => {
+interface ChangeLocationProps {
+  data: {
+    location: string;
+  };
+  errors?: Record<string, string | undefined>;
+  onChangeLocation: ChangeEventHandler<HTMLInputElement>;
+}
+const ChangeLocation: React.FC<ChangeLocationProps> = ({ data, errors, onChangeLocation }) => {
   return (
     <div className="change-area">
       <div className="row">
@@ -13,6 +20,9 @@ const ChangeLocation = () => {
         </div>
         <div className="col-md-12">
           <InputText
+            errors={errors}
+            value={data.location}
+            onChange={onChangeLocation}
             name="location"
             title='Get Location*'
             placeholder='Mirpur-12, Block-C, Road-3/20, Dhaka'
