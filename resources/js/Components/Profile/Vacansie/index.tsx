@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
+import CompanyIcon from "/public/assets/images/bg/company-logo/company-06.png"
 export interface VacancieProps {
-  logoSrc: string;
   jobTitle: string;
   location: string;
   postedDate: string;
@@ -12,7 +12,6 @@ export interface VacancieProps {
   action?: boolean;
 }
 const Vacancie: React.FC<VacancieProps> = ({
-  logoSrc,
   jobTitle,
   postedDate,
   aplyDate,
@@ -41,7 +40,7 @@ const Vacancie: React.FC<VacancieProps> = ({
       <td data-label="Job Title">
         <div className="company-info">
           <div className="logo">
-            <img src={logoSrc} alt="" />
+            <img src={CompanyIcon} alt="" />
           </div>
           <div className="company-details">
             <div className="top">

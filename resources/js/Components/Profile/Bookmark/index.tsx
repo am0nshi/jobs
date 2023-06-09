@@ -1,4 +1,3 @@
-import React from 'react'
 import Vacancie from '../Vacansie'
 
 const Bookmark = () => {

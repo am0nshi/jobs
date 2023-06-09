@@ -1,9 +1,11 @@
-import Header from "@/Components/Header"
-import EditResume from "@/Components/Profile/EditResume"
-import ProfileSidebar from "@/Components/Profile/ProfileSidebar"
-import { Head } from "@inertiajs/react"
-import { ProfileSidebarTypes } from "@/Enums/ProfileSidebarTypeEnum";
-const EditCV = () => {
+import Header from '@/Components/Header'
+import EditResume from '@/Components/Profile/EditResume'
+import ProfileSidebar from '@/Components/Profile/ProfileSidebar'
+import { ProfileSidebarTypes } from '@/Enums/ProfileSidebarTypeEnum'
+import { EditResumeTypes } from "@/Enums/EditResumeTypeEnum"
+import { Head } from '@inertiajs/react'
+
+const Education = () => {
   return (
     <>
       <Header />
@@ -15,14 +17,13 @@ const EditCV = () => {
               <ProfileSidebar type={ProfileSidebarTypes.EditResume} />
             </div>
             <div className="col-lg-9">
-              <EditResume />
+              <EditResume type={EditResumeTypes.Education} />
             </div>
           </div>
         </div>
       </div>
     </>
-
   )
 }
 
-export default EditCV
+export default Education
