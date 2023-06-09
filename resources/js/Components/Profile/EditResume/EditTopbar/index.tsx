@@ -1,24 +1,25 @@
 import React from 'react'
-
-const EditTopbar = () => {
+import EditTopbarItem from './EditTopbarItem'
+import { EditResumeTypes } from "@/Enums/EditResumeTypeEnum"
+const EditTopbar = ({ type }: { type: string }) => {
   return (
     <ul className="nav nav-tabs" id="myTab" role="tablist">
-      <li className="nav-item" role="presentation">
-        <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-          role="tab" aria-controls="home" aria-selected="true"><span></span>Basic Information:</button>
-      </li>
-      <li className="nav-item" role="presentation">
-        <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-          role="tab" aria-controls="profile" aria-selected="false"><span></span>Profile</button>
-      </li>
-      <li className="nav-item" role="presentation">
-        <button className="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-          role="tab" aria-controls="contact" aria-selected="false"><span></span>Education</button>
-      </li>
-      <li className="nav-item" role="presentation">
-        <button className="nav-link" id="professional-tab" data-bs-toggle="tab" data-bs-target="#professional" type="button"
-          role="tab" aria-controls="professional" aria-selected="false"><span></span>Professional Info</button>
-      </li>
+      <EditTopbarItem text='Basic Information:'
+        href="/edit-resume"
+        className={type === EditResumeTypes.BasicInformation ? "nav-link active" : "nav-link"}
+      />
+      <EditTopbarItem text='Profile'
+        href="/edit-resume/profile"
+        className={type === EditResumeTypes.Profile ? "nav-link active" : "nav-link"}
+      />
+      <EditTopbarItem text='Education'
+        href="/edit-resume/education"
+        className={type === EditResumeTypes.Education ? "nav-link active" : "nav-link"}
+      />
+      <EditTopbarItem text='Professional Info'
+        href="/edit-resume/professional-info"
+        className={type === EditResumeTypes.ProfessionalInfo ? "nav-link active" : "nav-link"}
+      />
     </ul>
   )
 }
