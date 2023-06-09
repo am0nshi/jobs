@@ -5,7 +5,7 @@ import { ProfileSidebarTypes } from '@/Enums/ProfileSidebarTypeEnum'
 import { EditResumeTypes } from "@/Enums/EditResumeTypeEnum"
 import { Head } from '@inertiajs/react'
 
-const BasicInformation = () => {
+const Education = () => {
   return (
     <>
       <Header />
@@ -26,4 +26,4 @@ const BasicInformation = () => {
   )
 }
 
-export default BasicInformation
+export default Education

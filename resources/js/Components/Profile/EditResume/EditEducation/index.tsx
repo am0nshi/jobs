@@ -1,5 +1,5 @@
+import { FormEventHandler } from "react"
 import InputSelect from '@/Components/InputSelect'
-
 
 import QualificationIcon from "/public/assets/images/icon/qualification-2.svg";
 import MajorIcon from "/public/assets/images/icon/major.svg"
@@ -31,9 +31,16 @@ const EditEducation = () => {
     date: "",
     endDate: "",
   })
+
+  const onSubmit: FormEventHandler = (e) => {
+    e.preventDefault();
+    reset();
+  };
   return (
     <div className="tab-pane active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-      <form className="edit-profile-form profile-form">
+      <form className="edit-profile-form profile-form"
+        onSubmit={onSubmit}
+      >
         <div className="section-title2">
           <h5>Educational Qualification:</h5>
         </div>
