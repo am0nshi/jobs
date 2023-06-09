@@ -1,13 +1,13 @@
-import PrivacyCheckBox from "./PrivacyCheckBox"
+import ToggleCheckBox from "@/Components/ToggleCheckBox";
 import { ChangeEventHandler } from "react"
 interface ChangePhoneEmailProps {
   onChangeJobAlert: ChangeEventHandler<HTMLInputElement>;
-  onChangeVisability: ChangeEventHandler<HTMLInputElement>;
+  onChangeVisibility: ChangeEventHandler<HTMLInputElement>;
   onChangeDisableAccount: ChangeEventHandler<HTMLInputElement>;
 }
 const ChangePrivacy: React.FC<ChangePhoneEmailProps> = ({
   onChangeJobAlert,
-  onChangeVisability,
+  onChangeVisibility,
   onChangeDisableAccount
 }) => {
   return (
@@ -20,17 +20,17 @@ const ChangePrivacy: React.FC<ChangePhoneEmailProps> = ({
           </div>
         </div>
         <div className="col-lg-12">
-          <PrivacyCheckBox
+          <ToggleCheckBox
             onChange={onChangeJobAlert}
             title="All Job Alert"
             name="jobAlert"
           />
-          <PrivacyCheckBox
-            onChange={onChangeVisability}
+          <ToggleCheckBox
+            onChange={onChangeVisibility}
             title="Resume Visibility"
             name="visibility"
           />
-          <PrivacyCheckBox
+          <ToggleCheckBox
             onChange={onChangeDisableAccount}
             title="Disable Account"
             text="If you log in again you will able to see all the match jobs and get all information."

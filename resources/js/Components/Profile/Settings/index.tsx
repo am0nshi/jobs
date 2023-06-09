@@ -4,7 +4,7 @@ import ChangeLocation from './ChangeLocation'
 import ChangePrivacy from './ChangePrivacy'
 import { useForm } from '@inertiajs/react'
 import { FormEventHandler } from 'react'
-
+import ProfileSettingsIcon from "/public/assets/images/icon/profile-settings.svg"
 const Settings = () => {
   const { data, errors, setData, reset } = useForm({
     password: "",
@@ -29,7 +29,8 @@ const Settings = () => {
       <form className="profile-form" onSubmit={onSubmit}>
         <div className="section-title2">
           <h5 className="d-flex align-items-baseline gap-1">
-            <img src="assets/images/icon/profile-settings.svg" alt="" /> Profile Settings
+            <img src={ProfileSettingsIcon} alt="" />
+            Profile Settings
           </h5>
         </div>
         <ChangePassword
@@ -54,7 +55,7 @@ const Settings = () => {
         <ChangePrivacy
           onChangeDisableAccount={e => setData('disableAccount', e.target.checked)}
           onChangeJobAlert={e => setData('jobAlert', e.target.checked)}
-          onChangeVisability={e => setData('visibility', e.target.checked)}
+          onChangeVisibility={e => setData('visibility', e.target.checked)}
         />
         <div className="col-md-12 pt-50">
           <div className="form-inner">

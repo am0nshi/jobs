@@ -5,7 +5,7 @@ export interface PrivacyCheckBoxProps extends InputHTMLAttributes<HTMLInputEleme
   text?: string
   errors?: Record<string, string | undefined>;
 }
-const PrivacyCheckBox: React.FC<PrivacyCheckBoxProps> = ({ title, name, value, text, onChange }) => {
+const ToggleCheckBox: React.FC<PrivacyCheckBoxProps> = ({ title, name, value, text, onChange }) => {
   return (
     <div className="single-permission mb-2">
       <div className="title">
@@ -23,4 +23,4 @@ const PrivacyCheckBox: React.FC<PrivacyCheckBoxProps> = ({ title, name, value, t
   )
 }
 
-export default PrivacyCheckBox
+export default ToggleCheckBox
