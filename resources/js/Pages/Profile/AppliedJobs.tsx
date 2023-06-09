@@ -3,7 +3,7 @@ import { Head } from '@inertiajs/react';
 import AppliedJobs from '@/Components/Profile/AppliedJobs';
 import Header from '@/Components/Header';
 import Footer from '@/Components/Footer';
-
+import { ProfileSidebarTypes } from "@/Enums/ProfileSidebarTypeEnum";
 const Profile = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const Profile = () => {
         <div className="container">
           <div className="row g-lg-4 gy-5 mb-90">
             <div className="col-lg-3">
-              <ProfileSidebar />
+              <ProfileSidebar type={ProfileSidebarTypes.AppliedJobs} />
             </div>
             <div className="col-lg-9">
               <AppliedJobs />

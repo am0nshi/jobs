@@ -1,5 +1,8 @@
 import Vacancie from '../Vacansie'
 
+//icons
+
+
 const AppliedJobs = () => {
   return (
     <div className="applied-job-area">
@@ -20,7 +23,6 @@ const AppliedJobs = () => {
           </thead>
           <tbody>
             <Vacancie
-              logoSrc="assets/images/bg/company-logo/company-06.png"
               jobTitle="Senior UI/UX Designer"
               postedDate="1 days ago"
               aplyDate="03/07/2022"
@@ -31,7 +33,6 @@ const AppliedJobs = () => {
               status="Viewed"
             />
             <Vacancie
-              logoSrc="assets/images/bg/company-logo/company-06.png"
               jobTitle="React JS Developer"
               postedDate="1 days ago"
               location="Dhaka, Bangladesh"
@@ -43,7 +44,6 @@ const AppliedJobs = () => {
             />
 
             <Vacancie
-              logoSrc="assets/images/bg/company-logo/company-06.png"
               jobTitle="WordPress Developer"
               postedDate="2 days ago"
               location="West London, UK"
@@ -54,7 +54,6 @@ const AppliedJobs = () => {
               status="Canceled"
             />
             <Vacancie
-              logoSrc="assets/images/bg/company-logo/company-06.png"
               jobTitle="Mern-Stack Developer"
               postedDate="1 week ago"
               location="New-York, USA"
@@ -65,7 +64,7 @@ const AppliedJobs = () => {
               status="Viewed"
             />
             <Vacancie
-              logoSrc="assets/images/bg/company-logo/company-06.png"
+
               jobTitle="PHP Developer"
               postedDate="2 week ago"
               location="New-York, USA"
