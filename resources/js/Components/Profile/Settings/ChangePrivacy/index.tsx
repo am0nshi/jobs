@@ -1,6 +1,15 @@
-import PrivacyCheckBox from "../../../ToggleCheckBox"
-
-const ChangePrivacy = () => {
+import PrivacyCheckBox from "./PrivacyCheckBox"
+import { ChangeEventHandler } from "react"
+interface ChangePhoneEmailProps {
+  onChangeJobAlert: ChangeEventHandler<HTMLInputElement>;
+  onChangeVisability: ChangeEventHandler<HTMLInputElement>;
+  onChangeDisableAccount: ChangeEventHandler<HTMLInputElement>;
+}
+const ChangePrivacy: React.FC<ChangePhoneEmailProps> = ({
+  onChangeJobAlert,
+  onChangeVisability,
+  onChangeDisableAccount
+}) => {
   return (
     <div className="privacy-security-area">
       <div className="row">
@@ -12,14 +21,20 @@ const ChangePrivacy = () => {
         </div>
         <div className="col-lg-12">
           <PrivacyCheckBox
+            onChange={onChangeJobAlert}
             title="All Job Alert"
+            name="jobAlert"
           />
           <PrivacyCheckBox
+            onChange={onChangeVisability}
             title="Resume Visibility"
+            name="visibility"
           />
           <PrivacyCheckBox
+            onChange={onChangeDisableAccount}
             title="Disable Account"
             text="If you log in again you will able to see all the match jobs and get all information."
+            name="disableAccount"
           />
           <div className="single-permission align-items-start">
             <div className="title">

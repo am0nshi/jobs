@@ -1,7 +1,16 @@
-import InputPassword from '@/Components/InputPassword'
-import React from 'react'
+import InputPassword from '@/Components/InputPassword';
+import { ChangeEventHandler } from 'react';
+interface ChangePasswordProps {
+  data: {
+    password: string;
+    confirmPassword: string;
+  };
+  errors?: Record<string, string | undefined>;
+  onChangePassword: ChangeEventHandler<HTMLInputElement>;
+  onChangeConfirmPassword: ChangeEventHandler<HTMLInputElement>;
+}
+const ChangePassword: React.FC<ChangePasswordProps> = ({ data, errors, onChangePassword, onChangeConfirmPassword }) => {
 
-const ChangePassword = () => {
   return (
     <div className="change-password-area mb-40">
       <div className="row">
@@ -10,19 +19,24 @@ const ChangePassword = () => {
             <h6>Change Your Password</h6>
             <div className="dash"></div>
           </div>
-
         </div>
         <div className="col-md-6">
           <InputPassword
+            errors={errors}
+            value={data.password}
+            onChange={onChangePassword}
             title='New Password*'
             placeholder='Password'
             name="password" />
         </div>
         <div className="col-md-6">
           <InputPassword
+            errors={errors}
+            value={data.confirmPassword}
+            onChange={onChangeConfirmPassword}
             title='Confirm Password*'
             placeholder='Confirm Password'
-            name="confirmpassword" />
+            name="confirmPassword" />
         </div>
         <div className="col-md-12 pt-10">
           <div className="form-inner">
@@ -30,8 +44,8 @@ const ChangePassword = () => {
           </div>
         </div>
       </div>
-
     </div>
+
   )
 }
 
