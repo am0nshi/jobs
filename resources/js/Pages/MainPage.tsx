@@ -7,6 +7,7 @@ import Header from '@/Components/Header'
 import Hero from '@/Components/Hero'
 import HowItWorksArea from '@/Components/HowItWorksArea'
 import JobListArea from '@/Components/JobListArea'
+import JobLocationArea from '@/Components/JobLocationArea'
 
 const MainPage = () => {
   return (
@@ -19,6 +20,7 @@ const MainPage = () => {
       <HowItWorksArea />
       <FeaturedArea />
       <FeedBackArea />
+      <JobLocationArea />
       <Footer />
     </>
   )
