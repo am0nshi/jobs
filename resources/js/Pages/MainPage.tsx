@@ -8,6 +8,7 @@ import Hero from '@/Components/Hero'
 import HowItWorksArea from '@/Components/HowItWorksArea'
 import JobListArea from '@/Components/JobListArea'
 import JobLocationArea from '@/Components/JobLocationArea'
+import RecentArticleArea from '@/Components/RecentArticleArea'
 
 const MainPage = () => {
   return (
@@ -21,6 +22,7 @@ const MainPage = () => {
       <FeaturedArea />
       <FeedBackArea />
       <JobLocationArea />
+      <RecentArticleArea />
       <Footer />
     </>
   )
