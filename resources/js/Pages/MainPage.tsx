@@ -1,3 +1,4 @@
+import CounterArea from '@/Components/CounterArea'
 import Footer from '@/Components/Footer'
 import Header from '@/Components/Header'
 import Hero from '@/Components/Hero'
@@ -8,6 +9,7 @@ const MainPage = () => {
     <>
       <Header />
       <Hero />
+      <CounterArea />
       <Footer />
     </>
   )
