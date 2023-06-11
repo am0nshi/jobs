@@ -1,20 +1,20 @@
-import React, { useRef, useState, memo } from 'react'
+import React, { useRef, memo } from 'react'
 import CountUp from 'react-countup';
 import { useInView } from "framer-motion"
 import CompaniesSvg from './CompaniesSvg';
 import CandidatesSvg from './CandidatesSvg';
 import NewJobsSvg from './NewJobsSvg';
 import LiveJobsSvg from './LiveJobsSvg';
+
 //CountUp duration
 const duration = 1;
 
 const CounterArea = memo(() => {
-  const [counterOn, setCounterOn] = useState(false)
 
   const ref = useRef(null)
   const isInView = useInView(ref)
-  return (
 
+  return (
     <div className="counter-area home2-counter-area mb-80" ref={ref}>
       <div className="container">
         <div className="row g-lg-4 gy-5 justify-content-center">
