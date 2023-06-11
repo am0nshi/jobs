@@ -15,7 +15,7 @@ const CounterArea = memo(() => {
   const isInView = useInView(ref)
   return (
 
-    <div className="counter-area home2-counter-area" ref={ref}>
+    <div className="counter-area home2-counter-area mb-80" ref={ref}>
       <div className="container">
         <div className="row g-lg-4 gy-5 justify-content-center">
           <div className="col-lg-3 col-sm-6 divider d-flex justify-content-center">
@@ -36,7 +36,7 @@ const CounterArea = memo(() => {
                     }
                   </h3>
                 </div>
-                L</div>
+              </div>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 divider d-flex justify-content-center">

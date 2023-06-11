@@ -863,7 +863,7 @@ i.bx {
   transition: 0.35s;
 }
 .explore-btn a span::after {
-  content: url(../images/icon/explore-arrow.svg);
+  content: url(/public/assets/images/icon/explore-arrow.svg);
   position: relative;
   left: -35px;
   top: 3px;
@@ -20802,14 +20802,14 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   margin-left: 15px;
 }
 .recent-article-wrap2 .recent-article-content .explore-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -28px;
   top: 1px;
   transition: 0.35s;
 }
 .recent-article-wrap2 .recent-article-content .explore-btn a:hover span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 1px;
