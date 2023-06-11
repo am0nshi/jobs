@@ -3,6 +3,7 @@ import CounterArea from '@/Components/CounterArea'
 import Footer from '@/Components/Footer'
 import Header from '@/Components/Header'
 import Hero from '@/Components/Hero'
+import JobListArea from '@/Components/JobListArea'
 import React from 'react'
 
 const MainPage = () => {
@@ -12,6 +13,7 @@ const MainPage = () => {
       <Hero />
       <CounterArea />
       <CategoryArea />
+      <JobListArea />
       <Footer />
     </>
   )
