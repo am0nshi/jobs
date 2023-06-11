@@ -1,6 +1,7 @@
 import CategoryArea from '@/Components/CategoryArea'
 import CounterArea from '@/Components/CounterArea'
 import FeaturedArea from '@/Components/FeaturedArea'
+import FeedBackArea from '@/Components/FeedbackArea'
 import Footer from '@/Components/Footer'
 import Header from '@/Components/Header'
 import Hero from '@/Components/Hero'
@@ -17,6 +18,7 @@ const MainPage = () => {
       <JobListArea />
       <HowItWorksArea />
       <FeaturedArea />
+      <FeedBackArea />
       <Footer />
     </>
   )
