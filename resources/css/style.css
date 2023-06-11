@@ -16329,7 +16329,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  Hero Two
 =======================================*/
 .hero2 {
-  background-image: url(../images/bg/home2-banner-bg.png);
+  background-image: url(/public/assets/images/bg/home2-banner-bg.png);
   background-color: rgba(0, 0, 0, 0.65);
   background-size: cover;
   background-position: center center;
@@ -16417,7 +16417,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   position: relative;
 }
 .hero2 .hero-wapper .hero-content .job-title::after, .hero2 .hero-wapper .hero-content .category::after {
-  content: url(../images/icon/job3.svg);
+  content: url(/public/assets/images/icon/job3.svg);
   position: absolute;
   left: 25px;
   top: 50%;
@@ -16439,7 +16439,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   max-width: 310px;
 }
 .hero2 .hero-wapper .hero-content .category::after {
-  content: url(../images/icon/category.svg);
+  content: url(/public/assets/images/icon/category.svg);
 }
 @media (max-width: 767px) {
   .hero2 .hero-wapper .hero-content .category {

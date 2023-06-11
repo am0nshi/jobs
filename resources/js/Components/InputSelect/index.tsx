@@ -9,7 +9,7 @@ export interface InputSelectProps extends InputHTMLAttributes<HTMLSelectElement>
   isFocused?: boolean;
 }
 const InputSelect: React.FC<InputSelectProps> = memo(({
-  className,
+  className = "mb-25",
   name,
   value,
   errors,
@@ -21,27 +21,41 @@ const InputSelect: React.FC<InputSelectProps> = memo(({
 }) => {
 
   return (
-    <div className={className}>
-      <div className="form-inner mb-25">
-        <label htmlFor={name}>{title}</label>
-        <div className="input-area">
-          {srcIcon ? <img src={srcIcon} alt="" /> : null}
-          <select
-            className="nice-select"
-            onChange={onChange}
-            onBlur={onBlur}
-            value={value}
-            id={name}
-            name={name}>
-            {Object.keys(options).map((key) => {
-              return (
-                <option key={key} value={key}>{options[key]}</option>
-              )
-            })}
-          </select>
-        </div>
-        {errors?.[name] ? <InputError message={errors[name]} /> : null}
+
+    <div className={`form-inner ${className}`}>
+      <label htmlFor={name}>{title}</label>
+      {srcIcon ? <div className="input-area">
+        <img src={srcIcon} alt="" />
+        <select
+          className="nice-select"
+          onChange={onChange}
+          onBlur={onBlur}
+          value={value}
+          id={name}
+          name={name}>
+          {Object.keys(options).map((key) => {
+            return (
+              <option key={key} value={key}>{options[key]}</option>
+            )
+          })}
+        </select>
       </div>
+        :
+        <select
+          className="nice-select"
+          onChange={onChange}
+          onBlur={onBlur}
+          value={value}
+          id={name}
+          name={name}>
+          {Object.keys(options).map((key) => {
+            return (
+              <option key={key} value={key}>{options[key]}</option>
+            )
+          })}
+        </select>}
+
+      {errors?.[name] ? <InputError message={errors[name]} /> : null}
     </div>
   )
 })
