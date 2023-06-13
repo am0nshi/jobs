@@ -26,32 +26,32 @@ const TrustedCompanies = () => {
                 dragConstraints={{ right: 0, left: -width }}
                 className="swiper-wrapper"
                 whileTap={{ cursor: "grabbing" }}>
-                <div className="swiper-slide">
+                <div className="swiper-slide-trusted-trusted">
                   <div className="company-logo">
                     <img src={CompanyLogoIcon} alt="" />
                   </div>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide-trusted">
                   <div className="company-logo">
                     <img src={CompanyLogoIcon} alt="" />
                   </div>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide-trusted">
                   <div className="company-logo">
                     <img src={CompanyLogoIcon} alt="" />
                   </div>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide-trusted">
                   <div className="company-logo">
                     <img src={CompanyLogoIcon} alt="" />
                   </div>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide-trusted">
                   <div className="company-logo">
                     <img src={CompanyLogoIcon} alt="" />
                   </div>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide-trusted">
                   <div className="company-logo">
                     <img src={CompanyLogoIcon} alt="" />
                   </div>

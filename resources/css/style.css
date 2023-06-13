@@ -23519,4 +23519,15 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   left: 0;
   right: 0;
   opacity: 1;
-}/*# sourceMappingURL=style.css.map */
+}
+/* OWN STYLES */
+.swiper-slide-trusted{
+   flex-shrink: 0;
+  width: 20%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+
+/*# sourceMappingURL=style.css.map */
