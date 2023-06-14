@@ -4,14 +4,15 @@ export interface ProfileSidebarItemProps {
   href: string;
   className: string;
   children: ReactNode;
-  title: string
+  title: string,
 }
 const ProfileSidebarItem: React.FC<ProfileSidebarItemProps> = ({ href, className, children, title }) => {
   return (
     <li>
       <Link
         className={className}
-        href={href}>
+        href={href}
+      >
         {children}
         {title}
       </Link>
