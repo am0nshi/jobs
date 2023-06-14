@@ -8,7 +8,7 @@ const HeaderLogin = () => {
 
   return (
     <>
-      {!isLogged ?
+      {isLogged ?
         <LoggedUser />
         :
         <>
