@@ -863,7 +863,7 @@ i.bx {
   transition: 0.35s;
 }
 .explore-btn a span::after {
-  content: url(../images/icon/explore-arrow.svg);
+  content: url(/public/assets/images/icon/explore-arrow.svg);
   position: relative;
   left: -35px;
   top: 3px;
@@ -895,7 +895,7 @@ i.bx {
   transition: 0.35s;
 }
 .explore-btn6 a span::after {
-  content: url(../images/icon/explore-arrow.svg);
+  content: url(/public/assets/images/icon/explore-arrow.svg);
   position: relative;
   left: -35px;
   top: 3px;
@@ -927,7 +927,7 @@ i.bx {
   transition: 0.35s;
 }
 .explore-all-btn5 a span::after {
-  content: url(../images/icon/explore-arrow5.svg);
+  content: url(/public/assets/images/icon/explore-arrow5.svg);
   position: relative;
   left: -35px;
   top: 3px;
@@ -959,9 +959,9 @@ i.bx {
   width: 18px;
 }
 .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
-  left: -26px;
+  left: -10px;
   top: 0px;
   transition: 0.35s;
 }
@@ -2819,7 +2819,7 @@ header.style-2 .main-menu ul > li:hover > ul.sub-menu {
   transform: translateY(0);
 }
 header.style-2 .main-menu ul > li::before {
-  content: url(../images/icon/menu-active.svg);
+  content: url(/public/assets/images/icon/menu-active.svg);
   position: absolute;
   top: -11px;
   left: 50%;
@@ -3422,7 +3422,7 @@ header.style-3 .main-menu ul > li:hover > ul.sub-menu {
   transform: translateY(0);
 }
 header.style-3 .main-menu ul > li::before {
-  content: url(../images/icon/menu-active.svg);
+  content: url(/public/assets/images/icon/menu-active.svg);
   position: absolute;
   top: 20px;
   left: 50%;
@@ -5751,7 +5751,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  8. Hero 1
 =======================================*/
 .hero1 {
-  background-image: url(../images/bg/h1-hero-bg.png);
+  background-image: url(/public/assets/images/bg/h1-hero-bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -5876,7 +5876,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   position: relative;
 }
 .hero1 .hero-content .job-title::after, .hero1 .hero-content .category::after {
-  content: url(../images/icon/job3.svg);
+  content: url(/public/assets/images/icon/job3.svg);
   position: absolute;
   left: 25px;
   top: 50%;
@@ -5898,7 +5898,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   max-width: 310px;
 }
 .hero1 .hero-content .category::after {
-  content: url(../images/icon/category.svg);
+  content: url(/public/assets/images/icon/category.svg);
 }
 @media (max-width: 767px) {
   .hero1 .hero-content .category {
@@ -6280,7 +6280,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   border: 1px solid rgba(0, 167, 172, 0.4);
 }
 .home1-work-process .single-work-process.one::after {
-  content: url(../images/icon/work-up-arrow.svg);
+  content: url(/public/assets/images/icon/work-up-arrow.svg);
   position: absolute;
   top: -20px;
 }
@@ -6291,7 +6291,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   }
 }
 .home1-work-process .single-work-process.two::after {
-  content: url(../images/icon/work-down-arrow.svg);
+  content: url(/public/assets/images/icon/work-down-arrow.svg);
   position: absolute;
   bottom: -25px;
 }
@@ -6339,7 +6339,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   }
 }
 .swiper-btn1 .right-btn::after {
-  content: url(../images/icon/explore-arrow.svg);
+  content: url(/public/assets/images/icon/explore-arrow.svg);
   position: relative;
   left: -40px;
   top: 3px;
@@ -6356,7 +6356,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   transition: 0.35s;
 }
 .swiper-btn1 .left-btn::after {
-  content: url(../images/icon/explore-arrow-left.svg);
+  content: url(/public/assets/images/icon/explore-arrow-left.svg);
   position: relative;
   right: 21px;
   top: 3px;
@@ -6613,7 +6613,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   left: unset;
 }
 .home1-top-recruiters .slick-prev::after {
-  content: url(../images/icon/slick-prev.svg);
+  content: url(/public/assets/images/icon/slick-prev.svg);
 }
 .home1-top-recruiters .slick-next {
   position: absolute;
@@ -6621,7 +6621,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   top: -105px;
 }
 .home1-top-recruiters .slick-next::after {
-  content: url(../images/icon/slick-next.svg);
+  content: url(/public/assets/images/icon/slick-next.svg);
 }
 .home1-top-recruiters .slick-arrow {
   opacity: 0.5;
@@ -6733,7 +6733,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   width: 18px;
 }
 .home1-top-recruiters .recruters-card .job-details-vacancies .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -7234,7 +7234,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 }
 .footer1.style-6 {
   background-color: #030F11;
-  background-image: url(../images/bg/home6-footer-bg.png);
+  background-image: url(/public/assets/images/bg/home6-footer-bg.png);
 }
 .footer1.style-6 .footer-logo {
   background-color: #030F11;
@@ -7687,7 +7687,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   height: 130px;
   width: 130px;
   background: #F8F8F8;
-  background-image: url(../images/bg/image-upload-bg.png);
+  background-image: url(/public/assets/images/bg/image-upload-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -8378,7 +8378,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   display: block;
 }
 .form-wrapper form .salary-wrap .checkbox-container .checkmark:after {
-  content: url(../images/icon/checkbox-check.svg);
+  content: url(/public/assets/images/icon/checkbox-check.svg);
   left: 1px;
   top: -4px;
 }
@@ -10121,7 +10121,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   font-size: 15px;
 }
 .feature-card2 .job-type-apply .apply-btn a span::after {
-  top: 2px;
+  top: 2;
 }
 .feature-card2 .job-type-apply .full-time {
   background-color: #C7E5EE;
@@ -10724,7 +10724,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  17. Inner Pages Banner
 =======================================*/
 .inner-banner {
-  background-image: url(../images/bg/breadcrumb-bg.png);
+  background-image: url(/public/assets/images/bg/breadcrumb-bg.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10788,7 +10788,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 .inner-banner .banner-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   float: left;
   padding-right: 0.4rem;
-  content: url(../images/icon/company-2.svg);
+  content: url(/public/assets/images/icon/company-2.svg);
 }
 
 .job-sidebar {
@@ -10924,7 +10924,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   display: block;
 }
 .job-sidebar .job-widget .check-box-item .checkbox-container .checkmark:after {
-  content: url(../images/icon/checkbox-check.svg);
+  content: url(/public/assets/images/icon/checkbox-check.svg);
   left: 1.5px;
   top: -10px;
 }
@@ -11656,7 +11656,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   width: 18px;
 }
 .job-listing-card .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -11926,7 +11926,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   width: 18px;
 }
 .job-listing-card2 .job-content .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -12782,7 +12782,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   width: 18px;
 }
 .company-list-card1 .company-area .company-content .job-details-vacancies .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -12960,7 +12960,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   width: 18px;
 }
 .company-listing-card2 .job-details-vacancies .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 0px;
@@ -13557,7 +13557,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   width: 18px;
 }
 .company-details-area .job-listing-card .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -13611,7 +13611,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 }
 .faq-page .genarel-qustions-area .accordion .accordion-item .accordion-header .accordion-button::after {
   content: "";
-  background-image: url(../images/icon/accrodian--arrow.svg);
+  background-image: url(/public/assets/images/icon/accrodian--arrow.svg);
   width: 1.6rem;
   height: 1.6rem;
   opacity: 0.4;
@@ -13626,7 +13626,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 }
 
 .error-page {
-  background-image: url(../images/bg/error-bg.png);
+  background-image: url(/public/assets/images/bg/error-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -15203,7 +15203,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  Hero Three
 =======================================*/
 .hero3 {
-  background-image: url(../images/bg/hero3-bg.png);
+  background-image: url(/public/assets/images/bg/hero3-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -16141,7 +16141,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   width: 18px;
 }
 .home3-top-company .top-company-card .job-details-vacancies .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -16309,7 +16309,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   width: 18px;
 }
 .recent-article-card3 .article-content .author-and-btn .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -16329,7 +16329,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  Hero Two
 =======================================*/
 .hero2 {
-  background-image: url(../images/bg/home2-banner-bg.png);
+  background-image: url(/public/assets/images/bg/home2-banner-bg.png);
   background-color: rgba(0, 0, 0, 0.65);
   background-size: cover;
   background-position: center center;
@@ -16417,7 +16417,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   position: relative;
 }
 .hero2 .hero-wapper .hero-content .job-title::after, .hero2 .hero-wapper .hero-content .category::after {
-  content: url(../images/icon/job3.svg);
+  content: url(/public/assets/images/icon/job3.svg);
   position: absolute;
   left: 25px;
   top: 50%;
@@ -16439,7 +16439,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   max-width: 310px;
 }
 .hero2 .hero-wapper .hero-content .category::after {
-  content: url(../images/icon/category.svg);
+  content: url(/public/assets/images/icon/category.svg);
 }
 @media (max-width: 767px) {
   .hero2 .hero-wapper .hero-content .category {
@@ -16921,7 +16921,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  Home two Joblist
 =======================================*/
 .home2-job-list-area {
-  background-image: url(../images/bg/home2-job-list-bg.png);
+  background-image: url(/public/assets/images/bg/home2-job-list-bg.png);
   background-color: #F4F4F4;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17146,7 +17146,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   transition: 0.35s;
 }
 .home2-working-process .working-process-card2 .working-process-sl h4::before {
-  content: url(../images/icon/home2-work-process-vec.svg);
+  content: url(/public/assets/images/icon/home2-work-process-vec.svg);
   position: absolute;
   bottom: -15px;
   transition: 0.35s;
@@ -17240,7 +17240,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   margin-bottom: 0;
 }
 .home2-working-process .working-process-card2:hover .working-process-sl h4::before {
-  content: url(../images/icon/home2-work-process-vec2.svg);
+  content: url(/public/assets/images/icon/home2-work-process-vec2.svg);
   position: absolute;
   bottom: -15px;
 }
@@ -17249,7 +17249,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  Home two Talent Area
 =======================================*/
 .home2-talent-area .talent-wrap {
-  background-image: url(../images/bg/home2-talent-bg.png);
+  background-image: url(/public/assets/images/bg/home2-talent-bg.png);
   background-color: rgba(0, 0, 0, 0.65);
   background-repeat: no-repeat;
   background-size: cover;
@@ -17320,7 +17320,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   left: unset;
 }
 .home2-recruiters-area .slick-prev::after {
-  content: url(../images/icon/slick-prev.svg);
+  content: url(/public/assets/images/icon/slick-prev.svg);
 }
 .home2-recruiters-area .slick-next {
   position: absolute;
@@ -17328,7 +17328,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   top: -105px;
 }
 .home2-recruiters-area .slick-next::after {
-  content: url(../images/icon/slick-next.svg);
+  content: url(/public/assets/images/icon/slick-next.svg);
 }
 .home2-recruiters-area .slick-arrow {
   opacity: 0.5;
@@ -17446,7 +17446,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   display: initial;
 }
 .home2-recruiters-area .recruters-card .job-details-vacancies .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -17467,7 +17467,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  Home two User Feedback Area
 =======================================*/
 .home2-feedback-area .feedback-wrap {
-  background-image: url(../images/bg/home2-feedback-bg.png);
+  background-image: url(/public/assets/images/bg/home2-feedback-bg.png);
   background-color: #E2F7F7;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17628,7 +17628,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  Home Four Banner Area
 =======================================*/
 .hero4 {
-  background-image: url(../images/bg/home4-banner-bg.png);
+  background-image: url(/public/assets/images/bg/home4-banner-bg.png);
   background-color: rgba(0, 0, 0, 0.7);
   background-size: cover;
   background-position: center center;
@@ -17786,7 +17786,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   position: relative;
 }
 .hero4 .hero-wapper .hero-content .job-title::after, .hero4 .hero-wapper .hero-content .category::after {
-  content: url(../images/icon/job3.svg);
+  content: url(/public/assets/images/icon/job3.svg);
   position: absolute;
   left: 25px;
   top: 50%;
@@ -17808,7 +17808,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   max-width: 310px;
 }
 .hero4 .hero-wapper .hero-content .category::after {
-  content: url(../images/icon/category.svg);
+  content: url(/public/assets/images/icon/category.svg);
 }
 @media (max-width: 767px) {
   .hero4 .hero-wapper .hero-content .category {
@@ -18519,7 +18519,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   width: 18px;
 }
 .home4-feature-area .job-listing-card .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -18678,7 +18678,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  Home Four FeedBack Area
 =======================================*/
 .home4-feedback-area {
-  background-image: url(../images/bg/home4-feedback-bg.png);
+  background-image: url(/public/assets/images/bg/home4-feedback-bg.png);
   background-color: #F8F8F8;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18750,7 +18750,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   position: relative;
 }
 .home4-feedback-area .home4-feedback-slider2 .swiper-slide-active .author-img::before {
-  content: url(../images/icon/home4-feedback-u-ban.svg);
+  content: url(/public/assets/images/icon/home4-feedback-u-ban.svg);
   position: absolute;
   top: -5px;
   left: 53%;
@@ -18863,7 +18863,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   width: 18px;
 }
 .home4-top-recruitersa-area .recruters-card .company-area .name-location .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -19109,7 +19109,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   position: relative;
 }
 .hero5 .hero-left .job-title::after, .hero5 .hero-left .category::after {
-  content: url(../images/icon/job4.svg);
+  content: url(/public/assets/images/icon/job4.svg);
   position: absolute;
   left: 25px;
   top: 50%;
@@ -19131,7 +19131,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   max-width: 310px;
 }
 .hero5 .hero-left .category::after {
-  content: url(../images/icon/category4.svg);
+  content: url(/public/assets/images/icon/category4.svg);
 }
 @media (max-width: 767px) {
   .hero5 .hero-left .category {
@@ -19383,7 +19383,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   }
 }
 .hero6 .hero-wapper {
-  background-image: linear-gradient(rgba(23, 23, 23, 0.8), rgba(23, 23, 23, 0.8)), url(../images/bg/home6-banner-bg.png);
+  background-image: linear-gradient(rgba(23, 23, 23, 0.8), rgba(23, 23, 23, 0.8)), url(/public/assets/images/bg/home6-banner-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -19476,7 +19476,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   position: relative;
 }
 .hero6 .hero-wapper .hero-content .job-title::after, .hero6 .hero-wapper .hero-content .location::after {
-  content: url(../images/icon/search-icon2.svg);
+  content: url(/public/assets/images/icon/search-icon2.svg);
   position: absolute;
   left: 6px;
   top: 50%;
@@ -19494,7 +19494,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   max-width: 310px;
 }
 .hero6 .hero-wapper .hero-content .location::after {
-  content: url(../images/icon/category.svg);
+  content: url(/public/assets/images/icon/category.svg);
 }
 @media (max-width: 767px) {
   .hero6 .hero-wapper .hero-content .location {
@@ -19760,7 +19760,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   left: unset;
 }
 .home6-category-area .slick-prev::after {
-  content: url(../images/icon/slick-prev1.svg);
+  content: url(/public/assets/images/icon/slick-prev1.svg);
 }
 .home6-category-area .slick-prev::before {
   display: none;
@@ -19772,7 +19772,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   top: -105px;
 }
 .home6-category-area .slick-next::after {
-  content: url(../images/icon/slick-next1.svg);
+  content: url(/public/assets/images/icon/slick-next1.svg);
 }
 .home6-category-area .slick-next::before {
   display: none;
@@ -19856,7 +19856,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 =======================================*/
 .home6-trending-job-area {
   background: #030F11;
-  background-image: url(../images/bg/home6-trending-jobs-bg.png);
+  background-image: url(/public/assets/images/bg/home6-trending-jobs-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -20179,7 +20179,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 =======================================*/
 .home6-customer-feedback-area {
   background-color: #030F11;
-  background-image: url(../images/bg/home6-feedback-bg.png);
+  background-image: url(/public/assets/images/bg/home6-feedback-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -20431,7 +20431,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 =======================================*/
 .home6-top-recruiters {
   background-color: #030F11;
-  background-image: url(../images/bg/home6-top-recruters-bg.png);
+  background-image: url(/public/assets/images/bg/home6-top-recruters-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -20445,7 +20445,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   left: unset;
 }
 .home6-top-recruiters .slick-prev::after {
-  content: url(../images/icon/slick-prev1.svg);
+  content: url(/public/assets/images/icon/slick-prev1.svg);
 }
 .home6-top-recruiters .slick-prev::before {
   display: none;
@@ -20457,7 +20457,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   top: -105px;
 }
 .home6-top-recruiters .slick-next::after {
-  content: url(../images/icon/slick-next1.svg);
+  content: url(/public/assets/images/icon/slick-next1.svg);
 }
 .home6-top-recruiters .slick-next::before {
   display: none;
@@ -20582,7 +20582,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   display: initial;
 }
 .home6-top-recruiters .recruters-card .job-details-vacancies .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 2px;
@@ -20802,14 +20802,14 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   margin-left: 15px;
 }
 .recent-article-wrap2 .recent-article-content .explore-btn a span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -28px;
   top: 1px;
   transition: 0.35s;
 }
 .recent-article-wrap2 .recent-article-content .explore-btn a:hover span::after {
-  content: url(../images/icon/apply-arrow.svg);
+  content: url(/public/assets/images/icon/apply-arrow.svg);
   position: relative;
   left: -26px;
   top: 1px;
@@ -22943,7 +22943,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   margin-left: 10px;
 }
 .home5-trending-job-area .feature-card5 .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow5.svg);
+  content: url(/public/assets/images/icon/apply-arrow5.svg);
   top: 1.5px;
 }
 .home5-trending-job-area .feature-card5:hover .apply-btn {
@@ -23026,7 +23026,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 =======================================*/
 .home5-top-recruiters-area {
   background: #F2F2F2;
-  background-image: url(../images/bg/home5-top-recruiters-bg.png);
+  background-image: url(/public/assets/images/bg/home5-top-recruiters-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -23044,7 +23044,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   visibility: hidden;
 }
 .home5-top-recruiters-area .slick-prev::after {
-  content: url(../images/icon/home5-slick-prev.svg);
+  content: url(/public/assets/images/icon/home5-slick-prev.svg);
 }
 .home5-top-recruiters-area .slick-next {
   position: absolute;
@@ -23056,7 +23056,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   visibility: hidden;
 }
 .home5-top-recruiters-area .slick-next::after {
-  content: url(../images/icon/home5-slick-next.svg);
+  content: url(/public/assets/images/icon/home5-slick-next.svg);
 }
 .home5-top-recruiters-area .slick-arrow {
   opacity: 0.5;
@@ -23135,7 +23135,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   display: initial;
 }
 .home5-top-recruiters-area .recruters-card .company-area .apply-btn a span::after {
-  content: url(../images/icon/apply-arrow5.svg);
+  content: url(/public/assets/images/icon/apply-arrow5.svg);
   top: 1.5px;
 }
 .home5-top-recruiters-area .recruters-card:hover .apply-btn {
@@ -23180,7 +23180,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
  Home Five Clients Feedback Area
 =======================================*/
 .home5-clients-feedback-area {
-  background-image: url(../images/bg/home5-clients-feedback-bg.png);
+  background-image: url(/public/assets/images/bg/home5-clients-feedback-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23519,4 +23519,15 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
   left: 0;
   right: 0;
   opacity: 1;
-}/*# sourceMappingURL=style.css.map */
+}
+/* OWN STYLES */
+.swiper-slide-trusted{
+   flex-shrink: 0;
+  width: 20%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+
+/*# sourceMappingURL=style.css.map */
