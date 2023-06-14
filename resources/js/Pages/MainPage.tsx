@@ -1,20 +1,17 @@
-import CategoryArea from '@/Components/CategoryArea'
-import CounterArea from '@/Components/CounterArea'
-import FeaturedArea from '@/Components/FeaturedArea'
-import FeedBackArea from '@/Components/FeedbackArea'
-import Footer from '@/Components/Footer'
-import Header from '@/Components/Header'
-import Hero from '@/Components/Hero'
-import HowItWorksArea from '@/Components/HowItWorksArea'
-import JobListArea from '@/Components/JobListArea'
-import JobLocationArea from '@/Components/JobLocationArea'
-import RecentArticleArea from '@/Components/RecentArticleArea'
-import TrustedCompanies from '@/Components/TrustedCompanies'
+import CategoryArea from '@/Components/Home/CategoryArea'
+import CounterArea from '@/Components/Home/CounterArea'
+import FeaturedArea from '@/Components/Home/FeaturedArea'
+import FeedBackArea from '@/Components/Home/FeedbackArea'
+import Hero from '@/Components/Home/Hero'
+import HowItWorksArea from '@/Components/Home/HowItWorksArea'
+import JobListArea from '@/Components/Home/JobListArea'
+import JobLocationArea from '@/Components/Home/JobLocationArea'
+import RecentArticleArea from '@/Components/Home/RecentArticleArea'
+import TrustedCompanies from '@/Components/Home/TrustedCompanies'
 
 const MainPage = () => {
   return (
     <>
-      <Header />
       <Hero />
       <CounterArea />
       <CategoryArea />
@@ -25,7 +22,6 @@ const MainPage = () => {
       <JobLocationArea />
       <RecentArticleArea />
       <TrustedCompanies />
-      <Footer />
     </>
   )
 }
