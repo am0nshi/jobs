@@ -21,7 +21,7 @@ const MenuArea = () => {
 		<div>
 			<div className="menu-area">
 				<div className="header-logo">
-					<a href="index.html"><img alt="image" className="img-fluid" src={HeaderImg} /></a>
+					<a href="/"><img alt="image" className="img-fluid" src={HeaderImg} /></a>
 				</div>
 				<MainMenu showMenu={showMenu} setShowMenu={setShowMenu} />
 				<div className="nav-right d-flex jsutify-content-end align-items-center">
@@ -29,7 +29,8 @@ const MenuArea = () => {
 						<Notifications />
 						<Login />
 					</ul>
-					<div className="sidebar-button mobile-menu-btn "
+					<div
+						className="sidebar-button mobile-menu-btn"
 						onClick={toggleShowMenu}
 					>
 						<i className="bi bi-list"></i>

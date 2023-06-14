@@ -63,9 +63,7 @@ class RegisterController extends Controller
         } catch (\Throwable $e) {
             DB::rollBack();
 
-            return redirect()->back()->withErrors([
-                'Something went wrong. Please try again later.'
-            ]);
+            return redirect()->back()->with('error', 'Something went wrong. Please try again later.');
         }
     }
 
@@ -111,9 +109,7 @@ class RegisterController extends Controller
         } catch (\Throwable $e) {
             DB::rollBack();
 
-            return redirect()->back()->withErrors([
-                'Something went wrong. Please try again later.'
-            ]);
+            return redirect()->back()->with('error', 'Something went wrong. Please try again later.');
         }
     }
 }

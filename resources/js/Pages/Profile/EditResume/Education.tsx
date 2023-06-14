@@ -1,4 +1,3 @@
-import Header from '@/Components/Header'
 import EditResume from '@/Components/Profile/EditResume'
 import ProfileSidebar from '@/Components/Profile/ProfileSidebar'
 import { ProfileSidebarTypes } from '@/Enums/ProfileSidebarTypeEnum'
@@ -8,7 +7,6 @@ import { Head } from '@inertiajs/react'
 const Education = () => {
   return (
     <>
-      <Header />
       <Head title="Edit Resume" />
       <div className="dashboard-area pt-120 mb-120">
         <div className="container">
