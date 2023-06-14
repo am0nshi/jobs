@@ -7,6 +7,10 @@ import TotalIcon from "/public/assets/images/icon/tt-applied.svg"
 import SaveJobIcon from "/public/assets/images/icon/save-job.svg"
 import PendingIcon from "/public/assets/images/icon/pending-icon.svg"
 import ClosedIcon from "/public/assets/images/icon/closed-icon.svg"
+import TotalViewIcon from "/public/assets/images/icon/total-view-icon.svg"
+import FollowIcon from "/public/assets/images/icon/follow-icon.svg"
+import HightLightIcon from "/public/assets/images/icon/highlight-icon.svg"
+import FeaturedIcon from "/public/assets/images/icon/featured-icon.svg"
 const CompanyCounterArea = () => {
   return (
     <div className="counter-area">
@@ -15,94 +19,53 @@ const CompanyCounterArea = () => {
           countAmount={30}
           srcIcon={TotalIcon}
           title='Total Applied'
-
         />
         <CounterBlock
           countAmount={30}
-          srcIcon={TotalIcon}
-          title='Total Applied'
+          srcIcon={SaveJobIcon}
+          title='Live Jobs'
           sectionName='two'
         />
-        <CompanyCountCard
-          count={120}
+        <CounterBlock
+          countAmount={120}
           srcIcon={PendingIcon}
           title='Pending Job'
-          classType='three'
+          sectionName='three'
         />
-        <CompanyCountCard
-          count={900}
+        <CounterBlock
+          countAmount={900}
           srcIcon={ClosedIcon}
           title='Closed Jobs'
-          classType='four'
+          sectionName='four'
         />
       </div>
       <div className="row g-4 justify-content-cente">
-        <div className="col-lg-3 col-sm-6">
-          <div className="counter-single">
-            <div className="counter-icon">
-              <img src="assets/images/icon/total-view-icon.svg" alt="image" />
-            </div>
-            <div className="coundown">
-              <p>Total View</p>
-              <div className="d-flex align-items-center">
-                <h3 className="odometer">
-                  2500
-                </h3>
-                <span>+</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6">
-          <div className="counter-single two">
-            <div className="counter-icon">
-              <img src="assets/images/icon/follow-icon.svg" alt="image" />
-            </div>
-            <div className="coundown">
-              <p>Our Followers</p>
-              <div className="d-flex align-items-center">
-                <h3 className="odometer">
-                  250
-                </h3>
-                <span>+</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6">
-          <div className="counter-single three">
-            <div className="counter-icon">
-              <img src="assets/images/icon/highlight-icon.svg" alt="image" />
-            </div>
-            <div className="coundown">
-              <p>Highlighted Jobs</p>
-              <div className="d-flex align-items-center">
-                <h3 className="odometer">
-                  150
-                </h3>
-                <span>+</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-sm-6">
-          <div className="counter-single five">
-            <div className="counter-icon">
-              <img src="assets/images/icon/featured-icon.svg" alt="image" />
-            </div>
-            <div className="coundown">
-              <p>Our Followers</p>
-              <div className="d-flex align-items-center">
-                <h3 className="odometer">
-                  500
-                </h3>
-                <span>+</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CounterBlock
+          countAmount={2500}
+          srcIcon={TotalViewIcon}
+          title='Total View'
+        />
+        <CounterBlock
+          countAmount={250}
+          srcIcon={FollowIcon}
+          title='Our Followers'
+          sectionName='two'
+        />
+        <CounterBlock
+          countAmount={150}
+          srcIcon={HightLightIcon}
+          title='Highlighted Jobs'
+          sectionName='three'
+        />
+        <CounterBlock
+          countAmount={500}
+          srcIcon={FeaturedIcon}
+          title='Our Followers'
+          sectionName='five'
+        />
       </div>
-    </div>
+
+    </div >
   )
 }
 
