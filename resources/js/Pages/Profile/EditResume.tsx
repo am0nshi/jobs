@@ -1,12 +1,11 @@
-import Header from "@/Components/Header"
 import EditResume from "@/Components/Profile/EditResume"
 import ProfileSidebar from "@/Components/Profile/ProfileSidebar"
 import { Head } from "@inertiajs/react"
 import { ProfileSidebarTypes } from "@/Enums/ProfileSidebarTypeEnum";
+import {EditResumeTypes} from "@/Enums/EditResumeTypeEnum";
 const EditCV = () => {
   return (
     <>
-      <Header />
       <Head title="Edit Resume" />
       <div className="dashboard-area pt-120 mb-120">
         <div className="container">
@@ -15,7 +14,7 @@ const EditCV = () => {
               <ProfileSidebar type={ProfileSidebarTypes.EditResume} />
             </div>
             <div className="col-lg-9">
-              <EditResume />
+              <EditResume type={EditResumeTypes.BasicInformation}/>
             </div>
           </div>
         </div>

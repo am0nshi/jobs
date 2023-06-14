@@ -1,13 +1,10 @@
 import ProfileSidebar from '../../Components/Profile/ProfileSidebar';
 import Bookmark from '../../Components/Profile/Bookmark/index';
 import { Head } from '@inertiajs/react';
-import Header from '@/Components/Header';
-import Footer from '@/Components/Footer';
 import { ProfileSidebarTypes } from "@/Enums/ProfileSidebarTypeEnum";
 const Profile = () => {
   return (
     <>
-      <Header />
       <Head title="Bookmark" />
       <div className="dashboard-area pt-120 mb-120">
         <div className="container">
@@ -21,7 +18,6 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
 
   )

@@ -1,5 +1,3 @@
-import Footer from "@/Components/Footer"
-import Header from "@/Components/Header"
 import Dashboard from "@/Components/Profile/Dashboard"
 import ProfileSidebar from "@/Components/Profile/ProfileSidebar"
 import { Head } from "@inertiajs/react"
@@ -7,7 +5,6 @@ import { ProfileSidebarTypes } from "@/Enums/ProfileSidebarTypeEnum";
 const Profile = () => {
   return (
     <>
-      <Header />
       <Head title="Dashboard" />
       <div className="dashboard-area pt-120 mb-120">
         <div className="container">
@@ -21,7 +18,6 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
 
   )

@@ -37,7 +37,7 @@ export default function RegisterUser() {
 
   return (
     <>
-      <Head title="Register" />
+      <Head title="Register"  />
 
       <div className="register-area pt-120 mb-120">
         <div className="container">
