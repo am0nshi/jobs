@@ -78,6 +78,14 @@ Route::get('/edit-resume/professional-info', function () {
 
 /* EditResume routes END */
 
+/* CompanyProfile routes START */
+
+Route::get('/company/dashboard', function () {
+    return Inertia::render('CompanyProfile/Dashboard');
+});
+
+/* CompanyProfile routes START */
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
