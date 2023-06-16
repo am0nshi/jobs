@@ -3,6 +3,8 @@ import CompanyHeader from './CompanyHeader'
 import CompanyCounterArea from './CompanyCouterArea'
 import CompanySidebar from './CompanySidebar'
 import CompanyNewApplicants from './CompanyNewApplicants'
+import CompanyDashboard from './CompanyDashboard'
+import CompanySettings from './CompanySettings'
 
 const CompanyProfile = () => {
   return (
@@ -13,16 +15,8 @@ const CompanyProfile = () => {
             <CompanySidebar />
           </div>
           <div className="col-lg-12">
-            <div className="dashboard-inner">
-              <CompanyHeader
-                companyName='Elite Hangstroman'
-              />
-
-              <CompanyCounterArea />
-
-              <CompanyNewApplicants />
-            </div>
-
+            {/* <CompanyDashboard /> */}
+            {/* <CompanySettings /> */}
           </div>
         </div>
       </div>
