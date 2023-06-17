@@ -15,7 +15,15 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('CategoriesPage');
+    return Inertia::render('MainPage');
+});
+
+Route::get('/error', function () {
+    return Inertia::render('Error');
+});
+
+Route::get('/faq', function () {
+    return Inertia::render('Faq');
 });
 
 require __DIR__.'/auth.php';
