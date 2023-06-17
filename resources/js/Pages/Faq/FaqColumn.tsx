@@ -6,7 +6,7 @@ function FaqColumn(props: any) {
     const defaultState = {
         buttonClass: "accordion-button collapsed",
         ariaExpanded: "false",
-        divClass: "accordion-collapse collapse",
+        divClass: "accord-collapse",
     };
 
     const [drawerStates, setDrawerStates] = useState(
@@ -24,7 +24,7 @@ function FaqColumn(props: any) {
                 newDrawerStates[index] = {
                     buttonClass: "accordion-button",
                     areaExpanded: "true",
-                    divClass: "accordion-collapse show",
+                    divClass: "accord-collapse open",
                 };
                 return newDrawerStates;
             });

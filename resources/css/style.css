@@ -23531,3 +23531,15 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 
 
 /*# sourceMappingURL=style.css.map */
+
+
+.accord-collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease;
+}
+
+.accord-collapse.open {
+  max-height: 400px;
+  /* Adjust this value to fit your content */
+}
