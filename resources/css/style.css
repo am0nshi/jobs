@@ -23540,6 +23540,6 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 }
 
 .accord-collapse.open {
-  max-height: 400px;
-  /* Adjust this value to fit your content */
+  max-height: 200px;
+ 
 }
