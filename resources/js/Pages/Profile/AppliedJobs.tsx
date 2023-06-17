@@ -1,4 +1,4 @@
-import ProfileSidebar from '../../Components/Profile/ProfileSidebar';
+import ProfileSidebar from '@/Components/Profile/ProfileSidebar';
 import { Head } from '@inertiajs/react';
 import AppliedJobs from '@/Components/Profile/AppliedJobs';
 import { ProfileSidebarTypes } from "@/Enums/ProfileSidebarTypeEnum";

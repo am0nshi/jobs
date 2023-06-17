@@ -23,7 +23,6 @@ const companyTypeOptions = {
   "Software Company": "Software Company"
 }
 
-
 const CompanyMyProfile = () => {
 
   const { data, setData, reset } = useForm({

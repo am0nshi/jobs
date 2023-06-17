@@ -1,6 +1,6 @@
 import { CompanySidebarTypes } from "@/Enums/CompanySidebarTypeEnum"
 import CompanySidebar from '@/Components/CompanyProfile/CompanySidebar'
-import CompanyDashboard from '@/Components/CompanyProfile/CompanyDashboard'
+import CompanySettings from "@/Components/CompanyProfile/CompanySettings"
 const CompanyProfile = () => {
   return (
     <div className="dashboard-area company-dashboard pt-120 mb-120">
@@ -8,11 +8,11 @@ const CompanyProfile = () => {
         <div className="row g-lg-4">
           <div className="col-lg-12 mb-20">
             <CompanySidebar
-              activeSide={CompanySidebarTypes.Dashboard}
+              activeSide={CompanySidebarTypes.Settings}
             />
           </div>
           <div className="col-lg-12">
-            <CompanyDashboard />
+            <CompanySettings />
           </div>
         </div>
       </div>
