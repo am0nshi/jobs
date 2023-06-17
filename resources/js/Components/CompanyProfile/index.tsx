@@ -5,6 +5,9 @@ import CompanySidebar from './CompanySidebar'
 import CompanyNewApplicants from './CompanyNewApplicants'
 import CompanyDashboard from './CompanyDashboard'
 import CompanySettings from './CompanySettings'
+import CompanyJobList from './CompanyJobList'
+import CompanyPlans from './CompanyPlans'
+import CompanyMyProfile from './CompanyMyProfile'
 
 const CompanyProfile = () => {
   return (
@@ -16,6 +19,9 @@ const CompanyProfile = () => {
           </div>
           <div className="col-lg-12">
             {/* <CompanyDashboard /> */}
+            <CompanyMyProfile />
+            {/* {<CompanyJobList />} */}
+            {/* <CompanyPlans /> */}
             {/* <CompanySettings /> */}
           </div>
         </div>
