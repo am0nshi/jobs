@@ -1,4 +1,10 @@
 import React, { FormEventHandler } from 'react'
+import { useForm } from '@inertiajs/react';
+import TextArea from '@/Components/TextArea';
+import InputImg from '@/Components/InputImg';
+import InputText from '@/Components/InputText';
+import InputSelect from '@/Components/InputSelect';
+
 //icons
 import CompanyIcon from "/public/assets/images/icon/company-2.svg";
 import CategoryIcon from "/public/assets/images/icon/category-2.svg";
@@ -12,10 +18,7 @@ import LinkedInIcon from "/public/assets/images/icon/linkedin-2.svg";
 import PinterestIcon from "/public/assets/images/icon/pinterest-2.svg";
 import DribbleIcon from "/public/assets/images/icon/dribble-2.svg";
 import BehanceIcon from "/public/assets/images/icon/behance-2.svg"
-import InputText from '@/Components/InputText';
-import TextArea from '@/Components/TextArea';
-import { useForm } from '@inertiajs/react';
-import InputSelect from '@/Components/InputSelect';
+
 
 const companyTypeOptions = {
   "Digital Agency": "Digital Agency",
@@ -39,7 +42,9 @@ const CompanyMyProfile = () => {
     dribble: "",
     behance: "",
     description: "",
-    workingField: ""
+    workingField: "",
+    companyLogo: "",
+    companyCoverPhoto: "",
 
   })
   const onSubmit: FormEventHandler = (e) => {
@@ -183,26 +188,26 @@ const CompanyMyProfile = () => {
               <div className="company-images-area mb-50">
                 <div className="row g-lg-4 gy-5">
                   <div className="col-lg-6 devaider1 position-relative">
-                    <div className="company-logo-area">
-                      <h5>Company Logo: </h5>
-                      <div className="drag-area">
-                        <p>Upload Logo</p>
-                        <button type="button" className="upload-btn"><i className="bi bi-plus-lg"></i></button>
-                        <input type="file" />
-                      </div>
-                      <span>Maximum File Upload: 2 MB</span>
-                    </div>
+                    <InputImg
+                      value={data.companyLogo}
+                      className='company-logo-area'
+                      title='Company Logo:'
+                      maxSizeFile={5}
+                      text='Upload Logo'
+                      name='companyLogo'
+                      onChange={e => setData('companyLogo', e.target.files[0])}
+                    />
                   </div>
                   <div className="col-lg-6">
-                    <div className="company-cover-photo-area">
-                      <h5>Company Cover Photo: </h5>
-                      <div className="drag-area" id="dragArea2">
-                        <p>Upload Photo</p>
-                        <button type="button" className="upload-btn"><i className="bi bi-plus-lg"></i></button>
-                        <input type="file" /* hidden="" */ />
-                      </div>
-                      <span>Maximum File Upload: 5 MB</span>
-                    </div>
+                    <InputImg
+                      value={data.companyCoverPhoto}
+                      className='company-cover-photo-area'
+                      title='Company Cover Photo:'
+                      maxSizeFile={5}
+                      text='Upload Photo'
+                      name='companyCoverPhoto'
+                      onChange={e => setData('companyCoverPhoto', e.target.files[0])}
+                    />
                   </div>
                 </div>
               </div>

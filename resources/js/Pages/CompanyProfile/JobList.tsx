@@ -1,6 +1,9 @@
 import { CompanySidebarTypes } from "@/Enums/CompanySidebarTypeEnum"
 import CompanySidebar from '@/Components/CompanyProfile/CompanySidebar'
 import CompanyJobList from "@/Components/CompanyProfile/CompanyJobList"
+
+
+
 const CompanyProfile = () => {
   return (
     <div className="dashboard-area company-dashboard pt-120 mb-120">
