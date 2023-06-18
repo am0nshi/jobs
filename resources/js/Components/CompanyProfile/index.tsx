@@ -20,7 +20,7 @@ const CompanyProfile = () => {
             />
           </div>
           <div className="col-lg-12">
-            <CompanyDashboard />
+            {/* <CompanyDashboard /> */}
             {/* <CompanyMyProfile /> */}
             {/* {<CompanyJobList />} */}
             {/*  <CompanyPlans /> */}
