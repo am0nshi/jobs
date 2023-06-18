@@ -1,4 +1,4 @@
-import React, { FormEventHandler } from 'react'
+import React, { ChangeEvent, FormEventHandler } from 'react'
 import { useForm } from '@inertiajs/react';
 import TextArea from '@/Components/TextArea';
 import InputImg from '@/Components/InputImg';
@@ -19,7 +19,25 @@ import PinterestIcon from "/public/assets/images/icon/pinterest-2.svg";
 import DribbleIcon from "/public/assets/images/icon/dribble-2.svg";
 import BehanceIcon from "/public/assets/images/icon/behance-2.svg"
 
-
+export interface useFormProps {
+  [key: string]: unknown;
+  companyName: string;
+  companyType: string;
+  companySize: string;
+  location: string;
+  email: string;
+  website: string;
+  facebook: string;
+  twitter: string;
+  linkedIn: string;
+  pinterest: string;
+  dribble: string;
+  behance: string;
+  description: string;
+  workingField: string;
+  companyLogo: File | null;
+  companyCoverPhoto: File | null;
+}
 const companyTypeOptions = {
   "Digital Agency": "Digital Agency",
   "Digital Marketing Agency": "Digital Marketing Agency",
@@ -28,7 +46,7 @@ const companyTypeOptions = {
 
 const CompanyMyProfile = () => {
 
-  const { data, setData, reset } = useForm({
+  const { data, setData, reset } = useForm<useFormProps>("myForm", {
     companyName: "",
     companyType: "",
     companySize: "",
@@ -43,14 +61,15 @@ const CompanyMyProfile = () => {
     behance: "",
     description: "",
     workingField: "",
-    companyLogo: "",
-    companyCoverPhoto: "",
+    companyLogo: null,
+    companyCoverPhoto: null,
 
   })
   const onSubmit: FormEventHandler = (e) => {
     e.preventDefault();
     reset();
   }
+
   return (
     <div className="my-profile-inner ">
       <div className="form-wrapper">
@@ -189,24 +208,31 @@ const CompanyMyProfile = () => {
                 <div className="row g-lg-4 gy-5">
                   <div className="col-lg-6 devaider1 position-relative">
                     <InputImg
-                      value={data.companyLogo}
                       className='company-logo-area'
                       title='Company Logo:'
                       maxSizeFile={5}
                       text='Upload Logo'
                       name='companyLogo'
-                      onChange={e => setData('companyLogo', e.target.files[0])}
+                      onChange={e => {
+                        if (e.target.files) {
+                          setData('companyLogo', e.target.files[0])
+                        }
+
+                      }}
                     />
                   </div>
                   <div className="col-lg-6">
                     <InputImg
-                      value={data.companyCoverPhoto}
                       className='company-cover-photo-area'
                       title='Company Cover Photo:'
                       maxSizeFile={5}
                       text='Upload Photo'
                       name='companyCoverPhoto'
-                      onChange={e => setData('companyCoverPhoto', e.target.files[0])}
+                      onChange={e => {
+                        if (e.target.files) {
+                          setData('companyCoverPhoto', e.target.files[0])
+                        }
+                      }}
                     />
                   </div>
                 </div>

@@ -26,7 +26,7 @@ const InputImg: React.FC<InputImgProps> = ({
       <h5>{title} </h5>
       <div className="drag-area">
         <p>{text}</p>
-        <button type="button" className="upload-btn"><i className="bi bi-plus-lg"></i></button>
+        <label htmlFor={name} className="upload-btn flex justify-center items-center cursor-pointer"><i className="bi bi-plus-lg"></i></label>
         <input
           onChange={onChange}
           onBlur={onBlur}
@@ -36,7 +36,6 @@ const InputImg: React.FC<InputImgProps> = ({
           id={name}
           name={name}
           placeholder={placeholder}
-
           hidden
         />
       </div>
