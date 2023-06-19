@@ -9,7 +9,6 @@ const BREAKPOINT_XXL = 1400;
 /** @use const { isMobile, isTablet, isDesktop} = useIsMobile(); */
 const useBreakpoints = () => {
   const checkForDevice = (breakpoint: number) => window.innerWidth >= breakpoint;
-  console.log(window.innerWidth)
 
   const [isXS, setIsXS] = useState(window.innerWidth < BREAKPOINT_SM);
   const [isSM, setIsSM] = useState(checkForDevice(BREAKPOINT_SM));
