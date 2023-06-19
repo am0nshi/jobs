@@ -1,4 +1,5 @@
-import CounterBlock from './CounterBlock'
+import CounterBlock from "@/Components/CounterBlock"
+
 const CounterArea = () => {
   return (
     <div className="counter-area">
