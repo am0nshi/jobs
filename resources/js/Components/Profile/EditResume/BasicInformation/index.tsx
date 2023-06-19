@@ -50,7 +50,8 @@ const BasicInformation = () => {
   return (
     <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
       <form className="edit-profile-form profile-form  mb-60"
-        onSubmit={onSubmit}>
+        onSubmit={onSubmit}
+      >
         <div className="row">
           <div className="col-md-6">
             <InputText
