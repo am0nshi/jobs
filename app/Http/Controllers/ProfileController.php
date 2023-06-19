@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 use Inertia\Response;
 
+/** @deprecated  */
 class ProfileController extends Controller
 {
     /**

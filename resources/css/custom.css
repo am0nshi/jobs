@@ -1,0 +1,24 @@
+.user-card > ul li a.user-card-link {
+    display: inline-flex;
+}
+
+.explore-btn a span {
+    display: inline-flex;
+}
+.explore-btn a span::after {
+    top: 5px;
+}
+
+.apply-btn a span {
+    display: inline-flex;
+}
+.apply-btn a span::after {
+    left: -26px;
+}
+.feature-card2 .job-type-apply .apply-btn a span::after {
+    top: 1px;
+}
+
+.recent-article-card3 .article-content .author-and-btn .apply-btn a span {
+    display: inline-flex;
+}

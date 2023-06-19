@@ -18,6 +18,7 @@ import "../css/datepicker.min.css"
 import "../css/jquery-ui.css";
 import "../css/uiicss.css"
 import "../css/style.css";
+import "../css/custom.css";
 
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react';
