@@ -17,6 +17,7 @@ import DesignationIcon from "/public/assets/images/icon/designation-2.svg";
 import QualificationIcon from "/public/assets/images/icon/qualification-2.svg";
 import LanguageIcon from "/public/assets/images/icon/language-2.svg";
 import { useForm } from '@inertiajs/react';
+import MaskedInput from "@/Components/MaskedInput";
 
 //Options for InputSelect
 const qualificationOptions = {
