@@ -26,6 +26,11 @@ Route::get('/faq', function () {
     return Inertia::render('Faq');
 });
 
+
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+});
+
 require __DIR__.'/auth.php';
 
 Route::middleware('auth')->group(function () {
