@@ -37,6 +37,10 @@ Route::get('/faq', function () {
     return Inertia::render('Faq');
 });
 
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+});
+
 
 
 
