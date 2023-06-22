@@ -57,7 +57,6 @@ const MyProfile = () => {
     e.preventDefault();
     reset();
   };
-
   const handlerSelectChange = (name: string, setData: Function) => {
     return (selectedOption: Array<object> | object) => {
       if (Array.isArray(selectedOption)) {
@@ -71,7 +70,6 @@ const MyProfile = () => {
 
     }
   }
-
   return (
     <>
       <div className="my-profile-inner">
