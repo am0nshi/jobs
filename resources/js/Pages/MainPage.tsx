@@ -13,8 +13,7 @@ import ViewResume from '@/Components/ViewResume'
 const MainPage = () => {
   return (
     <>
-      <ViewResume />
-      {/*    <Hero />
+      <Hero />
       <CounterArea />
       <CategoryArea />
       <JobListArea />
@@ -23,7 +22,7 @@ const MainPage = () => {
       <FeedBackArea />
       <JobLocationArea />
       <RecentArticleArea />
-      <TrustedCompanies /> */}
+      <TrustedCompanies />
     </>
   )
 }
