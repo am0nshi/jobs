@@ -165,8 +165,7 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputSelect
-                  onChange={e => setData('qualification', e.target.value)}
-                  value={data.qualification}
+                  onChange={handlerSelectChange("qualification", setData)}
                   errors={errors}
                   name='qualification'
                   srcIcon={QualificationIcon}
@@ -176,8 +175,7 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputSelect
-                  onChange={e => setData('language', e.target.value)}
-                  value={data.language}
+                  onChange={handlerSelectChange("language", setData)}
                   errors={errors}
                   name='language'
                   srcIcon={LanguageIcon}
