@@ -17,7 +17,7 @@ import DesignationIcon from "/public/assets/images/icon/designation-2.svg";
 import QualificationIcon from "/public/assets/images/icon/qualification-2.svg";
 import LanguageIcon from "/public/assets/images/icon/language-2.svg";
 import { useForm } from '@inertiajs/react';
-import MaskedInput from "@/Components/MaskedInput";
+
 
 //Options for InputSelect
 const qualificationOptions = {
@@ -34,7 +34,11 @@ const languageOptions = {
   "Italian": "Italian"
 };
 
+
 const MyProfile = () => {
+
+
+
   const { data, errors, setData, reset } = useForm({
     name: "",
     age: "",
@@ -53,6 +57,21 @@ const MyProfile = () => {
     e.preventDefault();
     reset();
   };
+
+  const handlerSelectChange = (name: string, setData: Function) => {
+    return (selectedOption: Array<object> | object) => {
+      if (Array.isArray(selectedOption)) {
+        const value = selectedOption.map(item => { return item.value })
+        setData(name, value)
+      }
+      else {
+        const optionWithValue = selectedOption as { value: string };
+        setData(name, optionWithValue.value);
+      }
+
+    }
+  }
+
   return (
     <>
       <div className="my-profile-inner">
@@ -153,8 +172,9 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputSelect
-                  onChange={e => setData('qualification', e.target.value)}
-                  value={data.qualification}
+                  isMulti
+                  onChange={handlerSelectChange("qualification", setData)}
+
                   errors={errors}
                   name='qualification'
                   srcIcon={QualificationIcon}
@@ -164,8 +184,7 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputSelect
-                  onChange={e => setData('language', e.target.value)}
-                  value={data.language}
+                  onChange={handlerSelectChange("language", setData)}
                   errors={errors}
                   name='language'
                   srcIcon={LanguageIcon}
