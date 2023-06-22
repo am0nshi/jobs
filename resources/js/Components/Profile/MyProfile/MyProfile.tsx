@@ -18,7 +18,6 @@ import QualificationIcon from "/public/assets/images/icon/qualification-2.svg";
 import LanguageIcon from "/public/assets/images/icon/language-2.svg";
 import { useForm } from '@inertiajs/react';
 
-
 //Options for InputSelect
 const qualificationOptions = {
   "Bachelor Degree in CSE": "Bachelor Degree in CSE",
@@ -34,11 +33,7 @@ const languageOptions = {
   "Italian": "Italian"
 };
 
-
 const MyProfile = () => {
-
-
-
   const { data, errors, setData, reset } = useForm({
     name: "",
     age: "",
@@ -170,9 +165,8 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputSelect
-                  isMulti
-                  onChange={handlerSelectChange("qualification", setData)}
-
+                  onChange={e => setData('qualification', e.target.value)}
+                  value={data.qualification}
                   errors={errors}
                   name='qualification'
                   srcIcon={QualificationIcon}
@@ -182,7 +176,8 @@ const MyProfile = () => {
               </div>
               <div className="col-md-6">
                 <InputSelect
-                  onChange={handlerSelectChange("language", setData)}
+                  onChange={e => setData('language', e.target.value)}
+                  value={data.language}
                   errors={errors}
                   name='language'
                   srcIcon={LanguageIcon}
