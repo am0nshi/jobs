@@ -8,11 +8,13 @@ import JobListArea from '@/Components/Home/JobListArea'
 import JobLocationArea from '@/Components/Home/JobLocationArea'
 import RecentArticleArea from '@/Components/Home/RecentArticleArea'
 import TrustedCompanies from '@/Components/Home/TrustedCompanies'
+import ViewResume from '@/Components/ViewResume'
 
 const MainPage = () => {
   return (
     <>
-      <Hero />
+      <ViewResume />
+      {/*    <Hero />
       <CounterArea />
       <CategoryArea />
       <JobListArea />
@@ -21,7 +23,7 @@ const MainPage = () => {
       <FeedBackArea />
       <JobLocationArea />
       <RecentArticleArea />
-      <TrustedCompanies />
+      <TrustedCompanies /> */}
     </>
   )
 }
