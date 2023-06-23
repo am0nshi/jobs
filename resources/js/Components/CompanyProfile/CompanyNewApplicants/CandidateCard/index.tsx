@@ -6,6 +6,7 @@ import ShortListIcon from "/public/assets/images/icon/shortlist-icon.svg"
 import RejectIcon from "/public/assets/images/icon/rejected-icon.svg"
 import EmployeeIcon from "/public/assets/images/bg/employee-img1.png"
 import CompanyIcon from "/public/assets/images/icon/company-2.svg"
+import Modal from '@/Components/Modal';
 
 export interface CandidateCardProps {
   candidateName: string;
@@ -50,53 +51,30 @@ const CandidateCard: React.FC<CandidateCardProps> = ({
               {candidateName}
             </button>
             {/* Modal */}
-            <AnimatePresence>
-              {isOpenedModal ?
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  className={
-                    isOpenedModal
-                      ? "modal fade show overflow-auto bg-black/50"
-                      : "modal fade"
-                  }
-                  style={isOpenedModal ? { display: "block" } : {}}
-                  id="exampleModal" tabIndex={-1}
-                  aria-hidden={isOpenedModal}
-                  aria-modal={isOpenedModal}
-                >
-
-                  <div className="modal-dialog">
-                    <div className="modal-content">
-                      <div className="modal-header">
-                        <div className="button-groups">
-                          <ul>
-                            <li>
-                              <button className="primary-bg"><img src="" alt="" /> Download PDF</button>
-                              <button><img src={ShortListIcon} alt="" /> Shortlist</button>
-                              <button className="red-bg"><img src={RejectIcon} alt="" /> reject</button>
-                            </li>
-                          </ul>
-                        </div>
-                        <button
-                          type="button"
-                          className="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                          onClick={() => setIsOpenedModal(false)}
-                        ></button>
-                      </div>
-                      <CandidateResume />
-                    </div>
-
+            <Modal show={isOpenedModal} onClose={toggleModal}>
+              <div className="modal-content h-[95vh] overflow-y-auto">
+                <div className="modal-header">
+                  <div className="button-groups">
+                    <ul>
+                      <li className='flex gap-2 flex-wrap'>
+                        <button className="primary-bg"><img src="" alt="" /> Download PDF</button>
+                        <button><img src={ShortListIcon} alt="" /> Shortlist</button>
+                        <button className="red-bg"><img src={RejectIcon} alt="" /> reject</button>
+                      </li>
+                    </ul>
                   </div>
-                </motion.div>
-                :
-                null
-              }
+                  <button
+                    type="button"
+                    className="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    onClick={() => setIsOpenedModal(false)}
+                  ></button>
+                </div>
+                <CandidateResume />
+              </div>
 
-            </AnimatePresence>
+            </Modal>
             <span><img src={CompanyIcon} alt="" /> {educationPlace}</span>
             <p><span>Applied On:</span> {appliedOn}</p>
           </div>

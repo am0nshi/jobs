@@ -8,11 +8,26 @@ import JobListArea from '@/Components/Home/JobListArea'
 import JobLocationArea from '@/Components/Home/JobLocationArea'
 import RecentArticleArea from '@/Components/Home/RecentArticleArea'
 import TrustedCompanies from '@/Components/Home/TrustedCompanies'
-import ViewResume from '@/Components/ViewResume'
-
+import Modal from '@/Components/Modal'
+import { useState } from 'react'
 const MainPage = () => {
+  let [isOpen, setIsOpen] = useState(true)
+
+  function closeModal() {
+    setIsOpen(false)
+  }
+
+  function openModal() {
+    setIsOpen(true)
+  }
   return (
+
     <>
+      <Modal onClose={closeModal} show={isOpen} >
+        <h1>wow</h1>
+        <h2>valera</h2>
+      </Modal>
+
       <Hero />
       <CounterArea />
       <CategoryArea />

@@ -242,7 +242,7 @@ const CandidateResume = () => {
       <div className="modal-footer">
         <div className="button-groups">
           <ul>
-            <li>
+            <li className="flex gap-2 flex-wrap">
               <button className="primary-bg"><img src="" alt="" /> Download PDF</button>
               <button><img src={ShortListIcon} alt="" /> Shortlist</button>
               <button className="red-bg"><img src={RejectIcon} alt="" /> reject</button>
