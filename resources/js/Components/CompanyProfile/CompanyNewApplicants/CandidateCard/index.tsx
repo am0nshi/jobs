@@ -51,8 +51,11 @@ const CandidateCard: React.FC<CandidateCardProps> = ({
               {candidateName}
             </button>
             {/* Modal */}
-            <Modal show={isOpenedModal} onClose={toggleModal}>
-              <div className="modal-content h-[95vh] overflow-y-auto">
+            <Modal
+              maxWidth='6xl'
+              show={isOpenedModal}
+              onClose={toggleModal}>
+              <div className="modal-content h-[95vh] w-full overflow-y-auto">
                 <div className="modal-header">
                   <div className="button-groups">
                     <ul>
