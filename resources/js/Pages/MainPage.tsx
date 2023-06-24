@@ -8,14 +8,9 @@ import JobListArea from '@/Components/Home/JobListArea'
 import JobLocationArea from '@/Components/Home/JobLocationArea'
 import RecentArticleArea from '@/Components/Home/RecentArticleArea'
 import TrustedCompanies from '@/Components/Home/TrustedCompanies'
-import Modal from '@/Components/Modal'
-import { useState } from 'react'
 const MainPage = () => {
   return (
-
     <>
-
-
       <Hero />
       <CounterArea />
       <CategoryArea />
