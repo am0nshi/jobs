@@ -12,6 +12,7 @@ const InputText: React.FC<InputTextProps> = memo(({
   className,
   name,
   value,
+  type="text",
   errors,
   title,
   srcIcon,
@@ -41,8 +42,8 @@ const InputText: React.FC<InputTextProps> = memo(({
             onChange={onChange}
             onBlur={onBlur}
             autoComplete={autoComplete ? autoComplete : "on"}
-            value={value || ""}
-            type="text"
+            value={type==="number"?value??0:value??""}
+            type={type}
             id={name}
             name={name}
             placeholder={placeholder}

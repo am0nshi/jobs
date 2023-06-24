@@ -1,0 +1,147 @@
+
+.se-toolbar,.se-navigation {
+    color:var(--primary-color1)!important;
+    background: color-mix(in srgb, currentColor 12%, transparent)!important;
+    border-color:  color-mix(in srgb, currentColor 12%, transparent)!important;
+}
+.se-btn{
+    color:var(--primary-color1)!important;
+}
+.se-btn-module {
+    border-color: var(--white);
+    background-color: var(--white);
+}
+
+.sun-editor .se-toolbar {
+    z-index: 0;
+}
+.sun-editor .se-btn-select {
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+.sun-editor .se-btn {
+    height: 1.98rem;
+    font-size: 1rem;
+
+}
+.sun-editor .se-resizing-bar {
+    padding: 0 0;
+ }
+
+ .sun-editor-editable * {
+    font-family: initial;
+    font-size: initial;
+    color: initial;
+}
+.sun-editor .se-dialog .se-dialog-inner .se-dialog-content .se-btn-primary {
+    width: fit-content!important;
+    border-radius: 5px!important;
+    background-color: var(--primary-color1)!important;
+    transition: 0.1s all ease;
+    margin:0!important;
+}
+
+.se-btn-primary span {
+    font-size: 1.063rem!important;
+    font-weight: 500!important;
+    color: var(--white)!important;
+    font-family: var(--font-exo2);
+    padding: 10px 20px!important;
+}
+.se-dialog-tabs {
+    display: flex;
+    background-color:var(--white)!important;
+    height: fit-content!important;
+}
+.se-dialog-tabs button.active {
+    background-color: var(--primary-color1)!important;
+    color: var(--white)!important;
+    border-bottom: 0;
+}
+.se-dialog-tabs button {
+    color:var(--primary-color1)!important;
+    background-color:var(--white)!important;
+    border-color:  color-mix(in srgb, currentColor 12%, transparent)!important;
+    border-radius: 5px!important;
+    border-color:  color-mix(in srgb, currentColor 12%, transparent)!important;
+    border: 1px solid!important;
+    padding: 0.5rem!important;
+    width: 80px!important;
+}
+.sun-editor .se-dialog-tabs button:hover {
+    color:var(--primary-color1)!important;
+    background: color-mix(in srgb, currentColor 12%, transparent)!important;
+    border-color:  color-mix(in srgb, currentColor 12%, transparent)!important;
+    transition: 0.1s all ease;
+}
+.se-dialog-content {
+    padding: 20px!important;
+    border-radius: 20px!important;
+}
+.se-navigation{
+    z-index: -1;
+}
+.sun-editor .se-wrapper {
+     position: static!important;
+}
+
+.se-dialog-btn-radio:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+}
+.se-dialog-btn-check:checked[type='checkbox'] {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+}
+.se-dialog-btn-radio,.se-dialog-btn-check {
+    height: 1rem!important;
+    width: 1rem!important;
+    color: var(--primary-color1)!important;
+    border-color: #6b7280!important;
+    border-width: 1px!important;
+    padding: 0!important;
+}
+.se-dialog-btn-radio{
+    border-radius: 100%!important;
+}
+.se-dialog-btn-check {
+    border-radius: 0;
+}
+.se-dialog .se-dialog-inner .se-dialog-content  label {
+    display: inline-flex!important;
+    align-items: center;
+    justify-content: center
+}
+.size-h, .se-video-ratio,._se_video_size_y,._se_video_size_x {
+    width: 90px!important;
+    text-align: center;
+}
+._se_image_size_y, ._se_image_size_x {
+    width: 80px!important;
+}
+.se-dialog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.se-list-layer {
+   max-height: 250px;
+}
+input._se_color_picker_input.se-color-input {
+    width: 100px!important;
+}
+._se_color_picker_submit {
+    width: 22px;
+    padding: 0!important;
+    color:var(--primary-color1)!important; 
+    background: color-mix(in srgb, currentColor 12%, transparent)!important;
+    border-color:  color-mix(in srgb, currentColor 12%, transparent)!important;
+}
+.sun-editor .se-dialog .se-dialog-inner .se-dialog-content {
+    max-width: 60vw!important; 
+    width: fit-content;
+}
+.se-dialog-footer{
+    padding: 0!important;
+}

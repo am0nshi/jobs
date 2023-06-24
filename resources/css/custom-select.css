@@ -1,0 +1,24 @@
+ .select__input{
+    height: 36px!important;
+    box-shadow: none!important;
+}
+.select__option ,.select__control{
+    font-size: 0.85rem!important;
+    font-family: var(--font-work-sans)!important;
+    font-weight: 400!important;
+}
+.select__control {
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)!important;
+    border: none!important;
+}
+.select__indicator-separator {
+    width: 0!important;
+}
+.select__option--is-focused {
+    color:var(--primary-color1)!important;
+    background: color-mix(in srgb, currentColor 12%, transparent) !important;
+}
+.select__option--is-selected{
+    color:var(--white)!important;
+    background:var(--primary-color1)!important;
+}

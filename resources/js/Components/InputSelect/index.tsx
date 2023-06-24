@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, memo, InputHTMLAttributes } from 'react'
+import React, {  memo, InputHTMLAttributes } from 'react'
 import InputError from '../InputError';
 
 export interface InputSelectProps extends InputHTMLAttributes<HTMLSelectElement> {

@@ -29,6 +29,9 @@ Route::get('/', function () {
     return Inertia::render('MainPage');
 });
 
+Route::get('/job-post', function () {
+    return Inertia::render('PostAJob/PostAJob');
+});
 
 /* Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
