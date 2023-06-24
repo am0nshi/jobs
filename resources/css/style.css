@@ -10787,7 +10787,7 @@ header.style-7 .main-menu ul li.menu-item-has-children > i {
 .inner-banner .banner-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   float: left;
   padding-right: 0.4rem;
-  content: url(../images/icon/company-2.svg);
+  content: url(../../public/assets/images/icon/company-2.svg);
 }
 
 .job-sidebar {
