@@ -11,7 +11,7 @@ Template Name: JOBES- Job Portal HTML Template
 }
 
 :root {
-    --primary-color1: rgb(0, 167, 172);
+    --primary-color1: #00A7AC;
     --primary-dark: #000000;
     --title-color1: #061421;
     --text-color1: #595959;
@@ -11116,9 +11116,7 @@ header.style-7 {
  17. Inner Pages Banner
 =======================================*/
 .inner-banner{
-    // background-image: url(../images/bg/breadcrumb-bg.png);
-    background-image: url(../../public/assets/images/bg/breadcrumb-bg.png);
-
+    background-image: url(/public/assets/images/bg/breadcrumb-bg.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11177,7 +11175,7 @@ header.style-7 {
             .breadcrumb-item+.breadcrumb-item::before {
                 float: left;
                 padding-right: 0.4rem;
-                content: url(../../public/assets/images/icon/company-2.svg);
+                content: url(/public/assets/images/icon/company-2.svg);
             }
         }
     }
@@ -11796,14 +11794,14 @@ header.style-7 {
     }
     .job-top{
         display: flex;
-        align-items: flex-start;
+        align-items: start;
         justify-content: space-between;
         gap: 20px;
         margin-bottom: 30px;
         position: relative; 
         .job-list-content{
             display: flex;
-            align-items: flex-start;
+            align-items: start;
             gap: 80px;
             position: relative;
             @include xxl-device(){
@@ -12404,7 +12402,7 @@ header.style-7 {
     }
     .job-list-content{
         display: flex;
-        align-items: flex-start;
+        align-items: start;
         justify-content: space-between;
         gap: 50px;
         margin-bottom: 30px;
@@ -13657,14 +13655,14 @@ header.style-7 {
         }
         .job-top{
             display: flex;
-            align-items: flex-start;
+            align-items: start;
             justify-content: space-between;
             gap: 30px;
             margin-bottom: 30px;
             position: relative; 
             .job-list-content{
                 display: flex;
-                align-items: flex-start;
+                align-items: start;
                 gap: 80px;
                 position: relative;
                 @include xxl-device(){
@@ -14202,7 +14200,7 @@ header.style-7 {
                 list-style: none;
                 li{
                     display: flex;
-                    align-items: flex-start;
+                    align-items: start;
                     margin-bottom: 8px;
                     &:last-child{
                         margin-bottom: 0;
@@ -14673,7 +14671,7 @@ header.style-7 {
                     align-items: baseline;
                     gap: 15px;
                     @include md-down-device(){
-                        align-items: flex-start;
+                        align-items: start;
                     }
                     h6{
                         font-family: var(--font-exo2);
@@ -14901,7 +14899,7 @@ header.style-7 {
                 display: flex;
                 align-items: center;
                 @include md-down-device(){
-                    align-items: flex-start;
+                    align-items: start;
                 }
                 @include sm-down-device(){
                     flex-wrap: wrap;
@@ -18552,14 +18550,14 @@ header.style-7 {
         }
         .job-top{
             display: flex;
-            align-items: flex-start;
+            align-items: start;
             justify-content: space-between;
             gap: 30px;
             margin-bottom: 30px;
             position: relative; 
             .job-list-content{
                 display: flex;
-                align-items: flex-start;
+                align-items: start;
                 gap: 80px;
                 position: relative;
                 @include xxl-device(){
@@ -20194,7 +20192,7 @@ header.style-7 {
             }
             .job-type{
                 display: flex;
-                align-items: flex-start;
+                align-items: start;
                 justify-content: end;
                 margin-right: 50px;
                 gap: 15px;

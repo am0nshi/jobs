@@ -1,10 +1,10 @@
 
 import React,{useMemo,memo} from 'react';
 import Wrap from './Wrap';
-import   "./../../../css/custom-select.css";
 import {  ISelectAsync } from './Interface';
 import AsyncCreatableSelect  from 'react-select/async-creatable';
 import {SelectedOptions} from "./index"
+import "/resources/css/custom-select.css";
 
 const  MyAsyncSelect:React.FC<ISelectAsync>=memo(({
     isMulti=false,

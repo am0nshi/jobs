@@ -3,13 +3,13 @@ import SunEditor from "suneditor-react";
 import { en } from 'suneditor/src/lang'
 import "suneditor/dist/css/suneditor.min.css";
 
-import "../../../css/text-editor.css";
+import "/resources/css/text-editor.css";
 import { MySetButtons } from "./Buttons";
 
  const TextEditor:React.FC<{
   value:string,
   setField(desc:string):void
-}>=({value,setField})=>{
+}>=memo(({value,setField})=>{
  
   return (
     <>
@@ -35,7 +35,7 @@ import { MySetButtons } from "./Buttons";
     </>
   );
 
-}
+})
 
 export default TextEditor;
 

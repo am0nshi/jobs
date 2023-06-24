@@ -3,9 +3,9 @@ import React,{useMemo,memo} from 'react';
 
 import Select from 'react-select';
 import Wrap from './Wrap';
-import   "./../../../css/custom-select.css";
 import { ISelect } from './Interface';
 import {SelectedOption} from "./index"
+import   "/resources/css/custom-select.css";
 
 const  MySimpleSelect:React.FC<ISelect>=memo(({
     options,

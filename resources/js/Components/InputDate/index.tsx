@@ -1,7 +1,7 @@
 import ReactDatePicker from "react-datepicker";
 import React, {  memo, useEffect, useRef } from 'react';
 import "react-datepicker/dist/react-datepicker.css";
-import "../../../css/custom-datepicker.css";
+import "/resources/css/custom-datepicker.css";
 
 
 

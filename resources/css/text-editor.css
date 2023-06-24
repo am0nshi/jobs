@@ -53,13 +53,11 @@
     display: flex;
     background-color:var(--white)!important;
     height: fit-content!important;
-    /* padding: 0px 20px!important */
 }
 .se-dialog-tabs button.active {
     background-color: var(--primary-color1)!important;
     color: var(--white)!important;
     border-bottom: 0;
-    /* transition: 0.1s all ease; */
 }
 .se-dialog-tabs button {
     color:var(--primary-color1)!important;
@@ -123,8 +121,9 @@
 .se-dialog-footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    align-content: flex-end;
 }
 .se-list-layer {
    max-height: 250px;
@@ -138,4 +137,11 @@ input._se_color_picker_input.se-color-input {
     color:var(--primary-color1)!important; 
     background: color-mix(in srgb, currentColor 12%, transparent)!important;
     border-color:  color-mix(in srgb, currentColor 12%, transparent)!important;
+}
+.sun-editor .se-dialog .se-dialog-inner .se-dialog-content {
+    max-width: 60vw!important; 
+    width: fit-content;
+}
+.se-dialog-footer{
+    padding: 0!important;
 }

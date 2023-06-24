@@ -1,9 +1,10 @@
 
 import { EJobPos, ESalaryType, ESalaryPer, IJobPost } from "./Interfaces";
 import Salary from "/public/assets/images/icon/salary-2.svg";
-import InputNumber from '../InputNumber';
+import InputText  from '../InputText';
 import { ISelectOptions } from '../Selects/Interface';
 import { MySimpleSelect } from '../Selects';
+import { useCallback } from "react";
 
 
 
@@ -12,7 +13,8 @@ const VariableInput:React.FC<{
     salaryType:ESalaryType,
     setFieldNewObj:(obj:IJobPost)=>void ,
 }>=({data,setFieldNewObj})=>{
-    function onChangeInput(e:React.ChangeEvent<HTMLInputElement>,isMin=true):void{
+
+     const onChangeInput=useCallback((e:React.ChangeEvent<HTMLInputElement>,isMin=true):void=>{
         let num:number=e.target.valueAsNumber
         if(data.salaryType===ESalaryType.fixedSalary){
             setFieldNewObj({...data,[EJobPos.salaryMin]:num,[EJobPos.salaryMax]:num})     
@@ -26,8 +28,9 @@ const VariableInput:React.FC<{
         else{
             setFieldNewObj({...data,[EJobPos.salaryMin]:0,[EJobPos.salaryMax]:0})
         }
-
-    }
+        
+    },[data])
+ 
     function onChangeSelect(per:string):void{
        setFieldNewObj({...data,[EJobPos.salaryPer]:per})           
     }
@@ -47,7 +50,7 @@ const VariableInput:React.FC<{
         </>:null}
     {data.salaryType==ESalaryType.fixedSalary||data.salaryType==ESalaryType.rangeSalary? <>
         <MySimpleSelect
-                name='per'
+                name={EJobPos.salaryPer}
                 options={salaryPerOptions}
                 value={data.salaryPer}
                 srcIcon={Salary} 
@@ -70,14 +73,22 @@ const salaryPerOptions:ISelectOptions[] = [
 
 const NumInput:React.FC<{
     onChangeInput:(e:React.ChangeEvent<HTMLInputElement>,isMin:boolean)=>void,
-        value:number,
-        isMin?:boolean}>=({onChangeInput,value,isMin=true})=>{
-    return <InputNumber  
+    value:number,
+    isMin?:boolean}>=({
+    onChangeInput,
+    value,
+    isMin=true})=>{
+
+    console.log(value,"NumInput");
+            
+    return <InputText 
+        type="number"
         name={isMin?EJobPos.salaryMin:EJobPos.salaryMax} 
         className='col-lg-6 col-12' 
         value={value}  
         srcIcon={Salary} 
         onChange={(e)=>onChangeInput(e,isMin)}
+        min={0}
         />
 }
 
