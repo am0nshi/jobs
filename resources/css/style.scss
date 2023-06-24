@@ -6838,7 +6838,7 @@ header.style-7 {
         .testimonial-content{
             .author-review-area{
                 display: flex;
-                align-items: end;
+                align-items: flex-end;
                 justify-content: space-between;
                 margin-bottom: 18px;
                 .author-area{
@@ -16136,7 +16136,7 @@ header.style-7 {
         position: relative;
         .user-feedback-top{
             display: flex;
-            align-items: end;
+            align-items: flex-end;
             justify-content: space-between;
             margin-bottom: 20px;
             @include sm-down-device(){
