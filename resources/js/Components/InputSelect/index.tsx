@@ -2,11 +2,11 @@ import React, { useCallback, memo, } from 'react'
 import InputError from '../InputError';
 import Select from "react-select";
 
-type OptionType = {
+export type OptionType = {
   value: string;
   label: string;
 };
-interface InputSelectProps {
+export interface InputSelectProps {
   className?: string;
   name: string;
   value?: string;
@@ -40,15 +40,16 @@ const InputSelect: React.FC<InputSelectProps> = memo(({
     }
   })
   const selectStyles = {
-    control: (styles: any) => ({ ...styles, width: "100%", height: "100%", backGround: "#eff3f2" })
+    container: (styles: any) => ({ ...styles, width: "100%", height: "25%", backGround: "none", display: "flex", justifyItems: "center", alignItems: "center" }),
+    control: (styles: any) => ({ ...styles, width: "100%", background: "none", border: "none" }),
+    indicatorsContainer: (styles: any) => ({ ...styles, display: "none" })
   }
   return (
-    <div className={` w-[100%] h-[100%] bg-[#EFF3F2;] ${className}`}>
+    <div className={className}>
       <label htmlFor={name}>{title}</label>
       {srcIcon ? <div className="flex gap-2">
         <img src={srcIcon} alt="" />
         <Select
-          className="w-[100%]"
           onChange={onChange}
           onBlur={onBlur}
           value={value}

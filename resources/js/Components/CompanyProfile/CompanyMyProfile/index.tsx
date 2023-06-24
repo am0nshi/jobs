@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEventHandler } from 'react'
+import { FormEventHandler } from 'react'
 import { useForm } from '@inertiajs/react';
 import TextArea from '@/Components/TextArea';
 import InputImg from '@/Components/InputImg';
@@ -7,7 +7,6 @@ import InputSelect from '@/Components/InputSelect';
 
 //icons
 import CompanyIcon from "/public/assets/images/icon/company-2.svg";
-import CategoryIcon from "/public/assets/images/icon/category-2.svg";
 import PersonIcon from "/public/assets/images/icon/person-2.svg";
 import EmailIcon from "/public/assets/images/icon/email-2.svg";
 import MapIcon from "/public/assets/images/icon/map-2.svg";
