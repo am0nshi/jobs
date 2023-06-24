@@ -77,10 +77,7 @@ const NumInput:React.FC<{
     isMin?:boolean}>=({
     onChangeInput,
     value,
-    isMin=true})=>{
-
-    console.log(value,"NumInput");
-            
+    isMin=true})=>{        
     return <InputText 
         type="number"
         name={isMin?EJobPos.salaryMin:EJobPos.salaryMax} 
