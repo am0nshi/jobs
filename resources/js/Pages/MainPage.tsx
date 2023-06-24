@@ -9,7 +9,7 @@ import JobLocationArea from '@/Components/Home/JobLocationArea'
 import RecentArticleArea from '@/Components/Home/RecentArticleArea'
 import TrustedCompanies from '@/Components/Home/TrustedCompanies'
 
-//  test
+
 const MainPage = () => {
   return (
     <>

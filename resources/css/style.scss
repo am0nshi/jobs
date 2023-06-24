@@ -2,7 +2,6 @@
 Template Name: JOBES- Job Portal HTML Template
 */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -11,9 +10,8 @@ Template Name: JOBES- Job Portal HTML Template
     scroll-behavior: smooth;
 }
 
-
 :root {
-    --primary-color1: #00A7AC;
+    --primary-color1: rgb(0, 167, 172);
     --primary-dark: #000000;
     --title-color1: #061421;
     --text-color1: #595959;
@@ -5578,7 +5576,7 @@ header.style-7 {
         left: 0;
         z-index: 99999;
         animation: smooth-header 0.65s linear;
-        box-shadow: 5px 3px 10px rgb(255 255 255 / 10%);
+        box-shadow: 5px 3px 10px rgba(255, 255, 255, 0.1);
         @keyframes smooth-header {
             0% {
                 transform: translateY(-30px);
@@ -8392,7 +8390,8 @@ header.style-7 {
                     font-weight: 400;
                     font-size: 0.875rem;
                     color: var(--title-color1);
-                    padding: 14px 0;
+                    // padding: 14px 0;
+                    padding: 14px 9px;
                     line-height: 1;
                     border: none;
                     &::placeholder{
@@ -8472,7 +8471,8 @@ header.style-7 {
                     font-weight: 400;
                     font-size: 0.875rem;
                     color: var(--title-color1);
-                    padding: 14px 0;
+                    // padding: 14px 0;
+                    padding: 14px 9px;
                     line-height: 1;
                     border: none;
                     &::placeholder{
@@ -11116,7 +11116,9 @@ header.style-7 {
  17. Inner Pages Banner
 =======================================*/
 .inner-banner{
-    background-image: url(../images/bg/breadcrumb-bg.png);
+    // background-image: url(../images/bg/breadcrumb-bg.png);
+    background-image: url(../../public/assets/images/bg/breadcrumb-bg.png);
+
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

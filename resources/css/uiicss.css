@@ -2101,7 +2101,7 @@
   }
   input {
     height: 30px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
     outline: none;
     background-color: #121528;
     border: 1px solid #00c768;

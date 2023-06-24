@@ -29,6 +29,9 @@ Route::get('/', function () {
     return Inertia::render('MainPage');
 });
 
+Route::get('/job-post', function () {
+    return Inertia::render('PostAJob/PostAJob');
+});
 
 
 /* Route::get('/dashboard', function () {
