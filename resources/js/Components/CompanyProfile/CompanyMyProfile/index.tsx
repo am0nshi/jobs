@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEventHandler } from 'react'
+import { FormEventHandler } from 'react'
 import { useForm } from '@inertiajs/react';
 import TextArea from '@/Components/TextArea';
 import InputImg from '@/Components/InputImg';
@@ -7,7 +7,6 @@ import InputSelect from '@/Components/InputSelect';
 
 //icons
 import CompanyIcon from "/public/assets/images/icon/company-2.svg";
-import CategoryIcon from "/public/assets/images/icon/category-2.svg";
 import PersonIcon from "/public/assets/images/icon/person-2.svg";
 import EmailIcon from "/public/assets/images/icon/email-2.svg";
 import MapIcon from "/public/assets/images/icon/map-2.svg";
@@ -18,6 +17,7 @@ import LinkedInIcon from "/public/assets/images/icon/linkedin-2.svg";
 import PinterestIcon from "/public/assets/images/icon/pinterest-2.svg";
 import DribbleIcon from "/public/assets/images/icon/dribble-2.svg";
 import BehanceIcon from "/public/assets/images/icon/behance-2.svg"
+import InputFile from '@/Components/InputFile';
 
 export interface useFormProps {
   [key: string]: unknown;
@@ -63,6 +63,7 @@ const CompanyMyProfile = () => {
     workingField: "",
     companyLogo: null,
     companyCoverPhoto: null,
+    companyIcon: null,
 
   })
   const onSubmit: FormEventHandler = (e) => {
@@ -254,16 +255,21 @@ const CompanyMyProfile = () => {
                   />
                 </div>
                 <div className="col-md-6">
-                  <div className="form-inner mb-25">
-                    <label>Add Icon*</label>
-                    <div className="input-area">
-                      <img src="assets/images/icon/company-2.svg" alt="" />
-                      <input type="file" />
-                    </div>
-                  </div>
+                  <InputFile
+                    className='company-cover-photo-area'
+                    title='Company Icon'
+                    name='companyIcon'
+                    srcIcon={CompanyIcon}
+                    onChange={e => {
+                      if (e.target.files) {
+                        setData('companyIcon', e.target.files[0])
+                      }
+                    }}
+                  />
                 </div>
                 <div className="col-md-12">
                   <TextArea
+                    title='Short Description*'
                     onChange={(e) => setData("description", e.target.value)}
                     value={data.description}
                     name='description'

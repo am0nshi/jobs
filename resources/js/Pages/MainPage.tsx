@@ -8,7 +8,6 @@ import JobListArea from '@/Components/Home/JobListArea'
 import JobLocationArea from '@/Components/Home/JobLocationArea'
 import RecentArticleArea from '@/Components/Home/RecentArticleArea'
 import TrustedCompanies from '@/Components/Home/TrustedCompanies'
-
 const MainPage = () => {
   return (
     <>
