@@ -1,13 +1,15 @@
-import { InputHTMLAttributes, useEffect, useRef, useState } from 'react';
-import InputMask from 'react-input-mask';
+import { useRef } from 'react';
+import { InputMask, InputMaskProps } from 'primereact/inputmask';
 import InputError from '../InputError';
-export interface MaskedInputProps extends InputHTMLAttributes<HTMLInputElement> {
-  name: string,
+
+export interface MaskedInputProps extends InputMaskProps {
+  name: string;
   srcIcon?: string;
   errors?: { [key: string]: string | undefined };
   isFocused?: boolean;
   mask: string;
 }
+
 const MaskedInput: React.FC<MaskedInputProps> = ({
   className,
   name,
@@ -21,18 +23,20 @@ const MaskedInput: React.FC<MaskedInputProps> = ({
   onBlur,
   mask,
 }) => {
+  const inputRef = useRef(null);
+
+
 
   return (
     <div className={className}>
       <div className="form-inner mb-25">
         <label htmlFor={name}>{title}</label>
         <div className="input-area">
-
           {srcIcon ? <img src={srcIcon} alt="" /> : null}
           <InputMask
+            onBlur={onBlur}
             mask={mask}
             onChange={onChange}
-            onBlur={onBlur}
             autoComplete={autoComplete ? autoComplete : "on"}
             value={value || ""}
             type="text"
@@ -40,12 +44,11 @@ const MaskedInput: React.FC<MaskedInputProps> = ({
             name={name}
             placeholder={placeholder}
           />
-
         </div>
         {errors?.[name] ? <InputError message={errors[name]} /> : null}
       </div>
     </div>
-
   );
-}
-export default MaskedInput
+};
+
+export default MaskedInput;

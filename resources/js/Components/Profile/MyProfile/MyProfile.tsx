@@ -17,6 +17,7 @@ import DesignationIcon from "/public/assets/images/icon/designation-2.svg";
 import QualificationIcon from "/public/assets/images/icon/qualification-2.svg";
 import LanguageIcon from "/public/assets/images/icon/language-2.svg";
 import { useForm } from '@inertiajs/react';
+import MaskedInput from "@/Components/MaskedInput";
 
 //Options for InputSelect
 const qualificationOptions = {
@@ -109,8 +110,9 @@ const MyProfile = () => {
                 />
               </div>
               <div className="col-md-6">
-                <InputText
-                  onChange={e => setData('phone', e.target.value)}
+                <MaskedInput
+                  mask="(999) 999-9999"
+                  onChange={e => setData('phone', e.target.value || "")}
                   value={data.phone}
                   errors={errors}
                   name="phone"
