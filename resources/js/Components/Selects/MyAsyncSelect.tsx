@@ -1,7 +1,7 @@
 
 import React,{useMemo,memo} from 'react';
 import Wrap from './Wrap';
-import {  ISelectAsync } from './Interface';
+import { ISelectAsync, ISelectOptions } from '@/Interfaces/Selects';
 import AsyncCreatableSelect  from 'react-select/async-creatable';
 import {SelectedOptions} from "./index"
 import "/resources/css/custom-select.css";
@@ -9,7 +9,7 @@ import "/resources/css/custom-select.css";
 const  MyAsyncSelect:React.FC<ISelectAsync>=memo(({
     isMulti=false,
     values=[],
-    setField,
+    onChange,
     className,
     name,
     errors,
@@ -34,13 +34,7 @@ const  MyAsyncSelect:React.FC<ISelectAsync>=memo(({
         isRtl={false}
         isSearchable={true}
         name={name}
-        onChange={(options)=>{
-          if (options !==undefined&& options instanceof Array) {
-            let resp=options?.map(x=>x.value)||[];
-            setField(resp)
-        }
-           else  setField([])         
-        }}
+        onChange={onChange}
         cacheOptions={cacheOptions} 
         loadOptions={loadOptions} 
         defaultOptions={defaultOptions}

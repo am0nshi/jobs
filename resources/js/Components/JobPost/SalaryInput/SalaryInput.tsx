@@ -1,6 +1,8 @@
 
-import { EJobPos, ESalaryType, ESalaryPer, IJobPost } from "./Interfaces";
-import VariableInput from './VariableInput';
+import { EJobPos, ESalaryPer, ESalaryType } from "@/Enums/JobPost";
+import { IJobPost }  from "../../../Interfaces/JobPost";
+import SalaryInputVariableInput from './SalaryInputVariableInput';
+import SalaryInputCheckBox from "./SalaryInputCheckBox";
 
 
 const SalaryInput:React.FC<{
@@ -41,23 +43,23 @@ const SalaryInput:React.FC<{
                 <div className="salary-wrap">
                     <label className="label">Budget/Salary*</label>
                     <div className="salery-select-area">
-                        <MyCheckBox  type={ESalaryType.fixedSalary} 
+                        <SalaryInputCheckBox  type={ESalaryType.fixedSalary} 
                             isChecked={data.salaryType===ESalaryType.fixedSalary} 
                             setSalaryType={onChangeCheckBox}
                             label="Fixed Salary"
                             />
-                        <MyCheckBox  type={ESalaryType.rangeSalary}
+                        <SalaryInputCheckBox  type={ESalaryType.rangeSalary}
                             isChecked={data.salaryType===ESalaryType.rangeSalary} 
                             setSalaryType={onChangeCheckBox}
                             label="Salary Range"
                             />
-                        <MyCheckBox  type={ESalaryType.negotiableSalary} 
+                        <SalaryInputCheckBox  type={ESalaryType.negotiableSalary} 
                             isChecked={data.salaryType===ESalaryType.negotiableSalary} 
                             setSalaryType={onChangeCheckBox}
                             label="Negotiable"
                             />                      
                     </div>
-                     <VariableInput  data={data} setFieldNewObj={setFieldNewObj} salaryType={data.salaryType}/> 
+                     <SalaryInputVariableInput  data={data} setFieldNewObj={setFieldNewObj} salaryType={data.salaryType}/> 
                 </div> 
             </div>
         </div>      
@@ -66,22 +68,5 @@ const SalaryInput:React.FC<{
 }
 export default SalaryInput;
 
-const MyCheckBox:React.FC<{
-    type:ESalaryType,
-    isChecked:boolean,
-    label:string,
-    setSalaryType: (type:ESalaryType)=>void,
-}>=({type,isChecked,label,setSalaryType})=>{
 
-    return (<>
-     <div className="single-salery">
-        <input className="form-check-input" type="radio" 
-        id={type} name="showInputBox" 
-        checked={isChecked}
-        onChange={()=>setSalaryType(type)}
-        />
-        <label htmlFor={type}>{label}</label>
-    </div>
-    </>)
-}
 

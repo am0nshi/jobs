@@ -904,7 +904,7 @@ i.bx {
             position: relative;
             transition: 0.35s;
             &::after{
-                content: url(../images/icon/explore-arrow.svg);
+                content: url(/public/assets/images/icon/explore-arrow.svg);
                 position: relative;
                 left: -35px;
                 top: 3px;
@@ -940,7 +940,7 @@ i.bx {
             position: relative;
             transition: 0.35s;
             &::after{
-                content: url(../images/icon/explore-arrow.svg);
+                content: url(/public/assets/images/icon/explore-arrow.svg);
                 position: relative;
                 left: -35px;
                 top: 3px;
@@ -976,7 +976,7 @@ i.bx {
             position: relative;
             transition: 0.35s;
             &::after{
-                content: url(../images/icon/explore-arrow5.svg);
+                content: url(/public/assets/images/icon/explore-arrow5.svg);
                 position: relative;
                 left: -35px;
                 top: 3px;
@@ -1016,7 +1016,7 @@ i.bx {
                 width: 18px;
             }
             &::after{
-                content: url(../images/icon/apply-arrow.svg);
+                content: url(/public/assets/images/icon/apply-arrow.svg);
                 position: relative;
                 left: -26px;
                 top: 0px;
@@ -2151,7 +2151,7 @@ header.style-1 {
                     
                 }
                 &::before{
-                    content: url(../images/icon/menu-active.svg);
+                    content: url(/public/assets/images/icon/menu-active.svg);
                     position: absolute;
                     top: -11px;
                     left: 50%;
@@ -2901,7 +2901,7 @@ header.style-2 {
                     
                 }
                 &::before{
-                    content: url(../images/icon/menu-active.svg);
+                    content: url(/public/assets/images/icon/menu-active.svg);
                     position: absolute;
                     top: -11px;
                     left: 50%;
@@ -3551,7 +3551,7 @@ header.style-3 {
                     
                 }
                 &::before{
-                    content: url(../images/icon/menu-active.svg);
+                    content: url(/public/assets/images/icon/menu-active.svg);
                     position: absolute;
                     top: 20px;
                     left: 50%;
@@ -6247,7 +6247,7 @@ header.style-7 {
             width: 100%;
             position: relative;
             &::after{
-                content: url(../images/icon/job3.svg);
+                content: url(/public/assets/images/icon/job3.svg);
                 position: absolute;
                 left: 25px;
                 top: 50%;
@@ -6269,7 +6269,7 @@ header.style-7 {
         .category{
             max-width: 310px;
             &::after{
-                content: url(../images/icon/category.svg);
+                content: url(/public/assets/images/icon/category.svg);
             }
             @include md-down-device(){
                 max-width: 100%;
@@ -6652,7 +6652,7 @@ header.style-7 {
         }
         &.one{
             &::after{
-                content: url(../images/icon/work-up-arrow.svg);
+                content: url(/public/assets/images/icon/work-up-arrow.svg);
                 position: absolute;
                 top: -20px;
                 @include sm-down-device(){
@@ -6663,7 +6663,7 @@ header.style-7 {
         }
         &.two{
             &::after{
-                content: url(../images/icon/work-down-arrow.svg);
+                content: url(/public/assets/images/icon/work-down-arrow.svg);
                 position: absolute;
                 bottom: -25px;
                 @include sm-down-device(){
@@ -6708,7 +6708,7 @@ header.style-7 {
             margin-right: 0;
         }
         &::after{
-            content: url(../images/icon/explore-arrow.svg);
+            content: url(/public/assets/images/icon/explore-arrow.svg);
             position: relative;
             left: -40px;
             top: 3px;
@@ -6727,7 +6727,7 @@ header.style-7 {
         margin-right: -20px;
         transition: 0.35s;
         &::after{
-            content: url(../images/icon/explore-arrow-left.svg);
+            content: url(/public/assets/images/icon/explore-arrow-left.svg);
             position: relative;
             right: 21px;
             top: 3px;
@@ -6987,7 +6987,7 @@ header.style-7 {
         top: -105px;
         left: unset;
         &::after{
-            content: url(../images/icon/slick-prev.svg);
+            content: url(/public/assets/images/icon/slick-prev.svg);
         }
     }
     .slick-next{
@@ -6995,7 +6995,7 @@ header.style-7 {
         right: 15px;
         top: -105px;
         &::after{
-            content: url(../images/icon/slick-next.svg);
+            content: url(/public/assets/images/icon/slick-next.svg);
         }
     }
     .slick-arrow{
@@ -7098,7 +7098,7 @@ header.style-7 {
                             width: 18px;
                         }
                         &::after{
-                            content: url(../images/icon/apply-arrow.svg);
+                            content: url(/public/assets/images/icon/apply-arrow.svg);
                             position: relative;
                             left: -26px;
                             top: 2px;
@@ -8742,7 +8742,7 @@ header.style-7 {
                     display: block;
                 }
                 .checkbox-container .checkmark:after {
-                    content: url(../images/icon/checkbox-check.svg);
+                    content: url(/public/assets/images/icon/checkbox-check.svg);
                     left: 1px;
                     top: -4px;
                 }
@@ -10205,7 +10205,7 @@ header.style-7 {
                     transition: 0.35s;
 
                     &::after{
-                        content: url(../images/icon/explore-arrow.svg);
+                        content: url(/public/assets/images/icon/explore-arrow.svg);
                         position: relative;
                         right: 10px;
                         top: 2px;
@@ -10214,7 +10214,7 @@ header.style-7 {
                     &:hover{
                         background-color: var(--white);
                         &::after{
-                            content: url(../images/icon/explore-arrow.svg);
+                            content: url(/public/assets/images/icon/explore-arrow.svg);
                             position: relative;
                             right: 0px;
                             top: 2px;
@@ -10230,7 +10230,7 @@ header.style-7 {
                     position: relative;
                     transition: 0.35s;
                     &::after{
-                        content: url(../images/icon/explore-arrow-left.svg);
+                        content: url(/public/assets/images/icon/explore-arrow-left.svg);
                         position: relative;
                         left: 10px;
                         top: 2px;
@@ -10239,7 +10239,7 @@ header.style-7 {
                     &:hover{
                         background-color: var(--white);
                         &::after{
-                            content: url(../images/icon/explore-arrow-left.svg);
+                            content: url(/public/assets/images/icon/explore-arrow-left.svg);
                             position: relative;
                             left: 0px;
                             top: 2px;
@@ -11314,7 +11314,7 @@ header.style-7 {
                 display: block;
             }
             .checkbox-container .checkmark:after {
-                content: url(../images/icon/checkbox-check.svg);
+                content: url(/public/assets/images/icon/checkbox-check.svg);
                 left: 1.5px;
                 top: -10px;
                 @include xxl-down-device(){
@@ -12046,7 +12046,7 @@ header.style-7 {
                     width: 18px;
                 }
                 &::after{
-                    content: url(../images/icon/apply-arrow.svg);
+                    content: url(/public/assets/images/icon/apply-arrow.svg);
                     position: relative;
                     left: -26px;
                     top: 2px;
@@ -12320,7 +12320,7 @@ header.style-7 {
                         width: 18px;
                     }
                     &::after{
-                        content: url(../images/icon/apply-arrow.svg);
+                        content: url(/public/assets/images/icon/apply-arrow.svg);
                         position: relative;
                         left: -26px;
                         top: 2px;
@@ -13160,7 +13160,7 @@ header.style-7 {
                                 width: 18px;
                             }
                             &::after{
-                                content: url(../images/icon/apply-arrow.svg);
+                                content: url(/public/assets/images/icon/apply-arrow.svg);
                                 position: relative;
                                 left: -26px;
                                 top: 2px;
@@ -13345,7 +13345,7 @@ header.style-7 {
                         width: 18px;
                     }
                     &::after{
-                        content: url(../images/icon/apply-arrow.svg);
+                        content: url(/public/assets/images/icon/apply-arrow.svg);
                         position: relative;
                         left: -26px;
                         top: 0px;
@@ -13928,7 +13928,7 @@ header.style-7 {
                         width: 18px;
                     }
                     &::after{
-                        content: url(../images/icon/apply-arrow.svg);
+                        content: url(/public/assets/images/icon/apply-arrow.svg);
                         position: relative;
                         left: -26px;
                         top: 2px;
@@ -13996,7 +13996,7 @@ header.style-7 {
                         }
                         &::after {
                             content: "";
-                            background-image: url(../images/icon/accrodian--arrow.svg);
+                            background-image: url(/public/assets/images/icon/accrodian--arrow.svg);
                             width: 1.6rem;
                             height: 1.6rem;
                             opacity: 0.4;
@@ -16497,7 +16497,7 @@ header.style-7 {
                             width: 18px;
                         }
                         &::after{
-                            content: url(../images/icon/apply-arrow.svg);
+                            content: url(/public/assets/images/icon/apply-arrow.svg);
                             position: relative;
                             left: -26px;
                             top: 2px;
@@ -16671,7 +16671,7 @@ header.style-7 {
                             width: 18px;
                         }
                         &::after{
-                            content: url(../images/icon/apply-arrow.svg);
+                            content: url(/public/assets/images/icon/apply-arrow.svg);
                             position: relative;
                             left: -26px;
                             top: 2px;
@@ -16774,7 +16774,7 @@ header.style-7 {
                 width: 100%;
                 position: relative;
                 &::after{
-                    content: url(../images/icon/job3.svg);
+                    content: url(/public/assets/images/icon/job3.svg);
                     position: absolute;
                     left: 25px;
                     top: 50%;
@@ -16796,7 +16796,7 @@ header.style-7 {
             .category{
                 max-width: 310px;
                 &::after{
-                    content: url(../images/icon/category.svg);
+                    content: url(/public/assets/images/icon/category.svg);
                 }
                 @include md-down-device(){
                     max-width: 100%;
@@ -17495,7 +17495,7 @@ header.style-7 {
             z-index: 1;
             transition: 0.35s;
             &::before{
-                content: url(../images/icon/home2-work-process-vec.svg);
+                content: url(/public/assets/images/icon/home2-work-process-vec.svg);
                 position: absolute;
                 bottom: -15px;
                 transition: 0.35s;
@@ -17593,7 +17593,7 @@ header.style-7 {
             .working-process-sl{
                h4{
                 &::before{
-                    content: url(../images/icon/home2-work-process-vec2.svg);
+                    content: url(/public/assets/images/icon/home2-work-process-vec2.svg);
                     position: absolute;
                     bottom: -15px;
                 }
@@ -17673,7 +17673,7 @@ header.style-7 {
         top: -105px;
         left: unset;
         &::after{
-            content: url(../images/icon/slick-prev.svg);
+            content: url(/public/assets/images/icon/slick-prev.svg);
         }
     }
     .slick-next{
@@ -17681,7 +17681,7 @@ header.style-7 {
         right: 15px;
         top: -105px;
         &::after{
-            content: url(../images/icon/slick-next.svg);
+            content: url(/public/assets/images/icon/slick-next.svg);
         }
     }
     .slick-arrow{
@@ -17791,7 +17791,7 @@ header.style-7 {
                             display: initial;
                         }
                         &::after{
-                            content: url(../images/icon/apply-arrow.svg);
+                            content: url(/public/assets/images/icon/apply-arrow.svg);
                             position: relative;
                             left: -26px;
                             top: 2px;
@@ -18121,7 +18121,7 @@ header.style-7 {
                 width: 100%;
                 position: relative;
                 &::after{
-                    content: url(../images/icon/job3.svg);
+                    content: url(/public/assets/images/icon/job3.svg);
                     position: absolute;
                     left: 25px;
                     top: 50%;
@@ -18143,7 +18143,7 @@ header.style-7 {
             .category{
                 max-width: 310px;
                 &::after{
-                    content: url(../images/icon/category.svg);
+                    content: url(/public/assets/images/icon/category.svg);
                 }
                 @include md-down-device(){
                     max-width: 100%;
@@ -18816,7 +18816,7 @@ header.style-7 {
                         width: 18px;
                     }
                     &::after{
-                        content: url(../images/icon/apply-arrow.svg);
+                        content: url(/public/assets/images/icon/apply-arrow.svg);
                         position: relative;
                         left: -26px;
                         top: 2px;
@@ -19067,7 +19067,7 @@ header.style-7 {
             .author-img{
                 position: relative;
                 &::before{
-                    content: url(../images/icon/home4-feedback-u-ban.svg);
+                    content: url(/public/assets/images/icon/home4-feedback-u-ban.svg);
                     position: absolute;
                     top: -5px;
                     left: 53%;
@@ -19167,7 +19167,7 @@ header.style-7 {
                                 width: 18px;
                             }
                             &::after{
-                                content: url(../images/icon/apply-arrow.svg);
+                                content: url(/public/assets/images/icon/apply-arrow.svg);
                                 position: relative;
                                 left: -26px;
                                 top: 2px;
@@ -19409,7 +19409,7 @@ header.style-7 {
             width: 100%;
             position: relative;
             &::after{
-                content: url(../images/icon/job4.svg);
+                content: url(/public/assets/images/icon/job4.svg);
                 position: absolute;
                 left: 25px;
                 top: 50%;
@@ -19431,7 +19431,7 @@ header.style-7 {
         .category{
             max-width: 310px;
             &::after{
-                content: url(../images/icon/category4.svg);
+                content: url(/public/assets/images/icon/category4.svg);
             }
             @include md-down-device(){
                 max-width: 100%;
@@ -19745,7 +19745,7 @@ header.style-7 {
                 width: 100%;
                 position: relative;
                 &::after{
-                    content: url(../images/icon/search-icon2.svg);
+                    content: url(/public/assets/images/icon/search-icon2.svg);
                     position: absolute;
                     left: 6px;
                     top: 50%;
@@ -19766,7 +19766,7 @@ header.style-7 {
             .location{
                 max-width: 310px;
                 &::after{
-                    content: url(../images/icon/category.svg);
+                    content: url(/public/assets/images/icon/category.svg);
                 }
                 @include md-down-device(){
                     max-width: 100%;
@@ -19988,7 +19988,7 @@ header.style-7 {
         top: -105px;
         left: unset;
         &::after{
-            content: url(../images/icon/slick-prev1.svg);
+            content: url(/public/assets/images/icon/slick-prev1.svg);
         }
         &::before{
             display: none;
@@ -20000,7 +20000,7 @@ header.style-7 {
         right: 15px;
         top: -105px;
         &::after{
-            content: url(../images/icon/slick-next1.svg);
+            content: url(/public/assets/images/icon/slick-next1.svg);
         }
         &::before{
             display: none;
@@ -20674,7 +20674,7 @@ header.style-7 {
         top: -105px;
         left: unset;
         &::after{
-            content: url(../images/icon/slick-prev1.svg);
+            content: url(/public/assets/images/icon/slick-prev1.svg);
         }
         &::before{
             display: none;
@@ -20686,7 +20686,7 @@ header.style-7 {
         right: 15px;
         top: -105px;
         &::after{
-            content: url(../images/icon/slick-next1.svg);
+            content: url(/public/assets/images/icon/slick-next1.svg);
         }
         &::before{
             display: none;
@@ -20799,7 +20799,7 @@ header.style-7 {
                             display: initial;
                         }
                         &::after{
-                            content: url(../images/icon/apply-arrow.svg);
+                            content: url(/public/assets/images/icon/apply-arrow.svg);
                             position: relative;
                             left: -26px;
                             top: 2px;
@@ -21009,7 +21009,7 @@ header.style-7 {
             span{
                 margin-left: 15px;
                 &::after{
-                    content: url(../images/icon/apply-arrow.svg);
+                    content: url(/public/assets/images/icon/apply-arrow.svg);
                     position: relative;
                     left: -28px;
                     top: 1px;
@@ -21019,7 +21019,7 @@ header.style-7 {
             &:hover{
                 span{
                     &::after{
-                        content: url(../images/icon/apply-arrow.svg);
+                        content: url(/public/assets/images/icon/apply-arrow.svg);
                         position: relative;
                         left: -26px;
                         top: 1px;
@@ -23243,7 +23243,7 @@ header.style-7 {
             span{
                 margin-left: 10px;
                 &::after{
-                    content: url(../images/icon/apply-arrow5.svg);
+                    content: url(/public/assets/images/icon/apply-arrow5.svg);
                     top: 1.5px;
                 }
             }
@@ -23347,7 +23347,7 @@ header.style-7 {
             visibility: hidden;
         }
         &::after{
-            content: url(../images/icon/home5-slick-prev.svg);
+            content: url(/public/assets/images/icon/home5-slick-prev.svg);
         }
     }
     .slick-next{
@@ -23359,7 +23359,7 @@ header.style-7 {
             visibility: hidden;
         }
         &::after{
-            content: url(../images/icon/home5-slick-next.svg);
+            content: url(/public/assets/images/icon/home5-slick-next.svg);
         }
     }
     .slick-arrow{
@@ -23431,7 +23431,7 @@ header.style-7 {
                         display: initial;
                     }
                     &::after{
-                        content: url(../images/icon/apply-arrow5.svg);
+                        content: url(/public/assets/images/icon/apply-arrow5.svg);
                         top: 1.5px;
                     }
                 }
