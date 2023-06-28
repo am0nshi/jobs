@@ -8,8 +8,8 @@ import { MySetButtons } from "./Buttons";
 
  const TextEditor:React.FC<{
   value:string,
-  setField(desc:string):void
-}>=memo(({value,setField})=>{
+  onChange(desc:string):void
+}>=memo(({value,onChange})=>{
  
   return (
     <>
@@ -27,9 +27,8 @@ import { MySetButtons } from "./Buttons";
               "#Fffa00",
               "#Ff0004",
           ],
-    }} 
-    
-        onChange={desc=>setField(desc)}
+    }}     
+        onChange={onChange}
         
       />
     </>

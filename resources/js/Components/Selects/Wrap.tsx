@@ -1,6 +1,7 @@
 import React, {  memo } from 'react';
 import InputError from "../InputError";
-import { IWrap } from './Interface';
+import { IWrap } from '@/Interfaces/Selects';
+
 
 const Wrap: React.FC<IWrap> = ({
     className,

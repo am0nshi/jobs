@@ -42,7 +42,7 @@ const InputText: React.FC<InputTextProps> = memo(({
             onChange={onChange}
             onBlur={onBlur}
             autoComplete={autoComplete ? autoComplete : "on"}
-            value={type==="number"?value??0:value??""}
+            value={value??""}
             type={type}
             id={name}
             name={name}

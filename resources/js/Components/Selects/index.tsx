@@ -1,6 +1,7 @@
 import MySimpleSelect from "./MySimpleSelect"
 import MyAsyncSelect from "./MyAsyncSelect"
-import { ISelectOptions } from "./Interface";
+import { ISelectOptions } from "@/Interfaces/Selects";
+
 
 export  {MySimpleSelect,MyAsyncSelect,SelectedOptions,SelectedOption};
 

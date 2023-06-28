@@ -3,14 +3,14 @@ import React,{useMemo,memo} from 'react';
 
 import Select from 'react-select';
 import Wrap from './Wrap';
-import { ISelect } from './Interface';
+import { ISelect } from '@/Interfaces/Selects';
 import {SelectedOption} from "./index"
 import   "/resources/css/custom-select.css";
 
 const  MySimpleSelect:React.FC<ISelect>=memo(({
     options,
     value,
-    setField,
+    onChange,
     className,
     name,
     errors,
@@ -34,9 +34,7 @@ const  MySimpleSelect:React.FC<ISelect>=memo(({
         isSearchable={true}
         name={name}
         options={options}
-        onChange={o=>{
-          setField(o?.value??"")
-        }}
+        onChange={onChange}
       />
     </Wrap>)
 })

@@ -1,8 +1,9 @@
+import { MultiValue, SingleValue } from "react-select";
 
 
 export interface IInputTextProps {
-    name: string,
-    title: string,
+    name: string;
+    title: string;
     srcIcon?: string;
     errors?: Record<string, string | undefined>;
     className?: string;
@@ -10,22 +11,21 @@ export interface IInputTextProps {
   }
   export interface IWrap extends IInputTextProps{ 
     children:JSX.Element;
-  
   }
   export interface ISelect extends IInputTextProps{ 
     options:Array<ISelectOptions>;
     value:string;
-    setField:(value:string)=>void;
+    onChange:(selected:ISelectOptions|null)=>void;
   }
   export interface ISelectAsync extends IInputTextProps{ 
     values:string[]|[];
-    setField:(value:string[]|null)=>void,
-    isMulti?:boolean,
-    cacheOptions?:boolean,
+    onChange:(values: MultiValue<ISelectOptions> | SingleValue<ISelectOptions>)=>void;
+    isMulti?:boolean;
+    cacheOptions?:boolean;
     loadOptions:(
       inputValue: string,
       callback: (options: ISelectOptions[]) => void
-    ) =>void,
+    ) =>void;
     defaultOptions:Array<ISelectOptions>
   }
   export interface ISelectOptions{ 
