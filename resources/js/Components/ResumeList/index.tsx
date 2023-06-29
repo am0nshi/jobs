@@ -1,14 +1,13 @@
+import Filter from "./Filter"
 import List from "./List"
 
 const ResumeList = () => {
   return (
     <div className="container mt-[100px]">
       {/* wrap */}
-      <div className="flex justify-around">
+      <div className="flex justify-around gap-10">
         {/* Filter */}
-        <div className="flex flex-col items-center w-[35%]">
-          1
-        </div>
+        <Filter />
         {/* List */}
         <List />
       </div>
