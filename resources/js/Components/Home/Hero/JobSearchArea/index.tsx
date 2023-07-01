@@ -17,7 +17,7 @@ const JobSearchArea = () => {
         </div>
         <InputSelect
           name="category"
-          className='category w-100%'
+          className='category w-[100%]'
           options={categoryOptions}
         />
         <div className="form-inner">
