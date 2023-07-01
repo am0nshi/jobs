@@ -9,6 +9,7 @@ export interface ListingCardProps {
   ExpandNode: ReactNode;
   jobType: Array<string>;
 }
+const classesJobType = ["light-green", "light-purple", "light-blue"]
 const ListingCard: React.FC<ListingCardProps> = ({
   jobPosition,
   company,
@@ -51,8 +52,9 @@ const ListingCard: React.FC<ListingCardProps> = ({
       <div className="job-type-apply">
         <div className="job-type">
           {jobType.map((item, index) => {
+            console.log(classesJobType[1])
             return (
-              <span className="light-green" key={index}>{item}</span>
+              <span className={classesJobType[index]} key={index}>{item}</span>
             )
           })}
         </div>

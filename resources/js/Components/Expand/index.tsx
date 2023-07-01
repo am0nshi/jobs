@@ -31,9 +31,9 @@ const Expand = memo(({ children }: ExpandProps) => {
         {/* button */}
         <div onClick={handleToggle} className=' 
         block
-        text-sm
+        text-md
         leading-6
-        text-[#0165FC]
+        text-[#00A7AC]
         mt-2
         cursor-pointer
         font-medium'>{isOpened ? "Close" : "Open"}</div>
