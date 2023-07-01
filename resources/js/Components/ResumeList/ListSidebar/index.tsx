@@ -10,7 +10,7 @@ const ListSidebar = () => {
             <ListSidebarWidget />
             <ListSidebarWidget />
             <div className="job-widget-btn">
-                <a className="primry-btn-2 lg-btn text-center" href="#">Go to Job Alert</a>
+                <a className="primry-btn-2 lg-btn text-center" href="">Go to Job Alert</a>
             </div>
         </div>
     )

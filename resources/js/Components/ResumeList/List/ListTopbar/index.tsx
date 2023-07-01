@@ -19,7 +19,7 @@ const ListTopbar = () => {
           <InputSelect
             name="jobType"
             options={jobOptions}
-            className='flex items-center w-[150px]'
+            className='flex items-center w-[150px]  bg-[#F8F8F8]'
           />
           <div className="grid-area">
             <ul>
