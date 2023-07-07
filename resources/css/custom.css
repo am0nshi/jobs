@@ -22,3 +22,14 @@
 .recent-article-card3 .article-content .author-and-btn .apply-btn a span {
     display: inline-flex;
 }
+
+.accord-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease;
+}
+
+.accord-collapse.open {
+    max-height: 200px;
+
+}
