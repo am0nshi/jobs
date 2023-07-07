@@ -20,6 +20,11 @@ import "../css/uiicss.css"
 import "../css/style.css";
 import "../css/custom.css";
 
+//PrimeReact styles
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/primereact.min.css";
+import 'primeicons/primeicons.css';
+
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
@@ -46,6 +51,7 @@ createInertiaApp({
     });
     return page
   },
+
   // resolve: (name) => resolvePageComponent(`./Pages/${name}.tsx`, import.meta.glob('./Pages/**/*.tsx')),
   setup({ el, App, props }) {
     const root = createRoot(el);
