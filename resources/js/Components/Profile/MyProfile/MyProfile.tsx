@@ -17,6 +17,9 @@ import DesignationIcon from "/public/assets/images/icon/designation-2.svg";
 import QualificationIcon from "/public/assets/images/icon/qualification-2.svg";
 import LanguageIcon from "/public/assets/images/icon/language-2.svg";
 import { useForm } from '@inertiajs/react';
+import SearchStatus = App.Enums.User.SearchStatus;
+import MyProfileUpdateRequest = App.Http.Requests.Auth.User.MyProfileUpdateRequest;
+import MaskedInput from "@/Components/MaskedInput";
 
 //Options for InputSelect
 const qualificationOptions = {
@@ -33,20 +36,33 @@ const languageOptions = {
   "Italian": "Italian"
 };
 
-const MyProfile = () => {
-  const { data, errors, setData, reset } = useForm({
-    name: "",
-    age: "",
-    location: "",
-    phone: "",
+const MyProfile = ({
+  search_status
+}: {
+  search_status: SearchStatus
+}) => {
+  const fields: Omit<MyProfileUpdateRequest, "search_status"> & SearchStatus = {
+    first_name: "",
+    last_name: "",
     email: "",
-    websiteLink: "",
-    companyName: "",
-    designation: "",
-    qualification: "",
-    language: "",
-    description: ""
-  })
+    phone: "",
+    search_status: "active",
+
+    // age: "",
+    // location: "",
+    // websiteLink: "",
+    // companyName: "",
+    // designation: "",
+    // qualification: "",
+    // language: "",
+    // description: ""
+  }
+  const {
+    data,
+    errors,
+    setData,
+    reset
+  } = useForm(fields)
 
   const onSubmit: FormEventHandler = (e) => {
     e.preventDefault();
@@ -78,13 +94,47 @@ const MyProfile = () => {
             <div className="row">
               <div className="col-md-6">
                 <InputText
-                  onChange={e => setData('name', e.target.value)}
+                  onChange={e => setData('first_name', e.target.value)}
                   name="name"
-                  value={data.name}
+                  value={data.first_name}
                   errors={errors}
                   placeholder='Mr. Robert'
                   srcIcon={UserIcon}
                   title='First Name*'
+                />
+              </div>
+              <div className="col-md-6">
+                <InputText
+                  onChange={e => setData('last_name', e.target.value)}
+                  name="name"
+                  value={data.last_name}
+                  errors={errors}
+                  placeholder='Frankly'
+                  srcIcon={UserIcon}
+                  title='Last Name*'
+                />
+              </div>
+              <div className="col-md-6">
+                <InputText
+                  onChange={e => setData('email', e.target.value)}
+                  value={data.email}
+                  errors={errors}
+                  name="email"
+                  placeholder='info@example.com'
+                  srcIcon={EmailIcon}
+                  title='Email*'
+                />
+              </div>
+              <div className="col-md-6">
+                <MaskedInput
+                  onChange={e => setData('phone', e.target.value)}
+                  value={data.phone}
+                  errors={errors}
+                  name="phone"
+                  placeholder='+1(587)-123-4567'
+                  srcIcon={PhoneIcon}
+                  title='Phone Number*'
+                  mask={'+1(999)999-9999'}
                 />
               </div>
               <div className="col-md-6">
@@ -106,28 +156,6 @@ const MyProfile = () => {
                   placeholder='Mirput, Dhaka'
                   srcIcon={LocationIcon}
                   title='Current Location*'
-                />
-              </div>
-              <div className="col-md-6">
-                <InputText
-                  onChange={e => setData('phone', e.target.value)}
-                  value={data.phone}
-                  errors={errors}
-                  name="phone"
-                  placeholder='+880-17 *** *** **'
-                  srcIcon={PhoneIcon}
-                  title='Phone Number*'
-                />
-              </div>
-              <div className="col-md-6">
-                <InputText
-                  onChange={e => setData('email', e.target.value)}
-                  value={data.email}
-                  errors={errors}
-                  name="email"
-                  placeholder='info@example.com'
-                  srcIcon={EmailIcon}
-                  title='Email*'
                 />
               </div>
               <div className="col-md-6">

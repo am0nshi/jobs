@@ -8,13 +8,13 @@ declare namespace App.Models {
     export interface User {
         id: number;
         first_name: string;
+        last_name: string;
         email: string;
         email_verified_at: string | null;
         password: string;
         remember_token: string | null;
         created_at: string | null;
         updated_at: string | null;
-        last_name: string;
         company_id: number | null;
         company?: App.Models.Company | null;
     }
@@ -33,7 +33,7 @@ declare namespace App.Models {
 }
 
 declare namespace App.Http.Requests.Auth {
-    export interface RegisterCompanyRequest {
+    export interface RegisterCompanyRequest extends Record<string, unknown>  {
         first_name: string;
         last_name: string;
         email: string;
@@ -44,18 +44,29 @@ declare namespace App.Http.Requests.Auth {
         company_type: string;
     }
 
-    export interface LoginRequest {
+    export interface LoginRequest extends Record<string, unknown>  {
         email: string;
         password: string;
     }
 
-    export interface RegisterUserRequest {
+    export interface RegisterUserRequest extends Record<string, unknown>  {
         first_name: string;
         last_name: string;
         email: string;
         password: string;
         password_confirmation: string;
         agreement?: boolean;
+    }
+
+}
+
+declare namespace App.Http.Requests.Auth.User {
+    export interface MyProfileUpdateRequest {
+        first_name: string;
+        last_name: string;
+        email: string;
+        phone: string;
+        search_status: string;
     }
 
 }
