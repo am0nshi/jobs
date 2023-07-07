@@ -1,18 +1,9 @@
 import React from 'react'
-const checkboxItems = [
-    { field: "Health Care", amount: 80 },
-    { field: "Account & Finance", amount: 80 },
-    { field: "Transportation", amount: 80 },
-    { field: "Medical & Finance", amount: 80 },
-    { field: "Development", amount: 999 },
-    { field: "Engineering", amount: 80 },
-    { field: "Health Care", amount: 125 },
-    { field: "Health Care", amount: 125 },
-    { field: "Health Care", amount: 125 },
-    { field: "Health Care", amount: 125 },
-    { field: "Health Care", amount: 125 },
-]
-const ListSidebarWidget = () => {
+interface CheckboxItem {
+    field: string;
+    amount: number;
+  }
+const ListSidebarWidget = ({checkboxItems}: {checkboxItems: Array<CheckboxItem>}) => {
     return (
         <div className="job-widget style-1 mb-20">
             <div className="check-box-item">
@@ -22,7 +13,7 @@ const ListSidebarWidget = () => {
                         {checkboxItems.map((item, index) => {
                             const { field, amount } = item;
                             return (
-                                <li>
+                                <li key={index}>
                                     <label className="containerss">
                                         <input type="checkbox" />
                                         <span className="checkmark"></span>

@@ -52,7 +52,6 @@ const ListingCard: React.FC<ListingCardProps> = ({
       <div className="job-type-apply">
         <div className="job-type">
           {jobType.map((item, index) => {
-            console.log(classesJobType[1])
             return (
               <span className={classesJobType[index]} key={index}>{item}</span>
             )
